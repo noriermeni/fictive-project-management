@@ -14,7 +14,7 @@ export default function SettingsFieldWrapper({children, title}: Props) {
 
     return (
         <div className={container}>
-            <Title text={title} />
+            <Title size={'sm'} text={title} />
             <div className={boxList}>
                 {children}
             </div>

@@ -11,9 +11,11 @@ import useData from "../../../hook/useData.hook";
 import {UserType} from "../../../types/User/user.type";
 
 export default function Header() {
-    const { palette } = useTheme();
     const { data, loading, error } = useData('profile/');
+
+    const { palette } = useTheme();
     let { container, innerContainer, icon, rightSide } = getHeaderClassNames(palette);
+
     const [isOpen, { setTrue: openPanel, setFalse: dismissPanel }] = useBoolean(false);
     const [ user, setUser ] = useState<UserType>();
 
@@ -26,8 +28,9 @@ export default function Header() {
             <Wrapper className={innerContainer}>
                 <Logo />
                 <div className={rightSide}>
+                    <Icon onClick={openPanel} className={icon} iconName={'WaffleOffice365'} />
                     <Icon onClick={openPanel} className={icon} iconName={'Settings'} />
-                    {user && <Persona hidePersonaDetails text={user.name} secondaryText={user.position} size={PersonaSize.size28}/>}
+                    {user && <Persona hidePersonaDetails text={`${user.first_name} ${user.last_name}`} secondaryText={user.position} size={PersonaSize.size28}/>}
                 </div>
             </Wrapper>
             <SettingsPanel

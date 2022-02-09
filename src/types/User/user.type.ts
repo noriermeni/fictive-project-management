@@ -1,4 +1,6 @@
 export interface UserType {
-    name: string;
-    position: string;
+    id: string;
+    first_name: string;
+    last_name: string;
+    position?: string;
 }

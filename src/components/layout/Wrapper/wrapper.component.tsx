@@ -15,15 +15,19 @@ export default function Wrapper({children, className}: Props) {
         container: {
             maxWidth: 1365,
             width: '100%',
-            backgroundColor: palette.white,
-            margin: '0 auto'
+            margin: '0 auto',
         },
+        innerContainer: {
+            paddingInline: 10
+        }
     });
 
     return (
-        <div className={classNames({
-            [styles.container]: true,
-            [className]: classNames
-        })}>{children}</div>
+        <div className={styles.container}>
+            <div className={classNames({
+                [styles.innerContainer]: true,
+                [className]: className
+            })}>{children}</div>
+        </div>
     );
 }

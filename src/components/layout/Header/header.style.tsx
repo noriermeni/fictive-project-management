@@ -21,7 +21,7 @@ export const getHeaderClassNames = (palette: IPalette): HeaderClassNames => {
             paddingBlock: 5
         },
         icon: {
-            fontSize: 25,
+            fontSize: 22,
             cursor: "pointer",
             color: palette.themePrimary,
             marginRight: 15

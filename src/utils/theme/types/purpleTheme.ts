@@ -24,5 +24,14 @@ export const PurpleTheme = createTheme({
         neutralDark: '#201f1e',
         black: '#000000',
         white: '#ffffff',
+        green: '#10893e',
+        greenLight: '#00cc6a',
+        red: '#E74856',
+        redDark: '#E81123',
+        blue: '#0063B1',
+        blueLight: '#0078D7',
+        yellow: '#FFEB3B',
+        yellowDark: '#FDD835',
+        yellowLight: '#FFEE58'
     }
 });
