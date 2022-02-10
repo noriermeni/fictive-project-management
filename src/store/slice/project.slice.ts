@@ -10,7 +10,6 @@ const projectSlice = createSlice({
         setSelectedUsers(state, action) {
             state.selectedUsersList = action.payload;
             state.employeesPanel = true;
-            console.log('test')
         },
         clearSelectedUsers(state) {
             state.selectedUsersList = [];

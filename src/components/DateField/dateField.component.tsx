@@ -1,9 +1,11 @@
 import React from "react";
 
 import { useTheme } from "@fluentui/react";
-import { getLanguageSwitcherClassNames } from "./dateField.style";
+import { getDateFieldClassNames } from "./dateField.style";
+
 import Title from "../Title/title.component";
-import {formatDate} from "../../utils/DateFormats/dateFormats";
+
+import { formatDate } from "../../utils/DateFormats/dateFormats";
 
 interface Props {
     label: string;
@@ -12,12 +14,12 @@ interface Props {
 
 export default function DateField({label, date}: Props) {
     const { palette } = useTheme();
-    const { container } = getLanguageSwitcherClassNames(palette)
+    const { container } = getDateFieldClassNames(palette)
 
     return (
         <div className={container}>
             <Title text={`${label}:`} />
-            <Title size={'sm'} text={formatDate(date)} />
+            <Title size={'sm'} text={`${formatDate(date)}`} />
         </div>
     );
 }

@@ -12,7 +12,7 @@ export const getTitleClassNames = (palette: IPalette): HeaderClassNames => {
     return mergeStyleSets({
         textStyle: {
             color: palette.neutralPrimaryAlt,
-            paddingBottom: 5
+            paddingBottom: 5,
         },
         xSmall: {
             fontSize: '12px',

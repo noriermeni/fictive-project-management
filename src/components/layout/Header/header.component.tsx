@@ -29,7 +29,6 @@ export default function Header() {
                 <Logo />
                 <div className={rightSide}>
                     <Icon onClick={openPanel} className={icon} iconName={'WaffleOffice365'} />
-                    <Icon onClick={openPanel} className={icon} iconName={'Settings'} />
                     {user && <Persona hidePersonaDetails text={`${user.first_name} ${user.last_name}`} secondaryText={user.position} size={PersonaSize.size28}/>}
                 </div>
             </Wrapper>

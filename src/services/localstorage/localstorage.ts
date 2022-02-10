@@ -11,6 +11,6 @@ export const getLocalData = async (key: string) => {
         const storedData: string | null = await localStorage.getItem(key);
         return JSON.parse(storedData ? storedData : '');
     } catch (e) {
-        throw new Error('Something went wrong with getLocalData service!')
+        throw new Error(`Something went wrong or nothing found in local storage with key: ${key}!`)
     }
 }

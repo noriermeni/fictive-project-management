@@ -1,22 +1,28 @@
 import { useState, useEffect, useRef } from 'react';
 
-export default function useComponentVisible(initialIsVisible: boolean) {
-    const [isComponentVisible, setIsComponentVisible] = useState(initialIsVisible);
-    const ref = useRef<HTMLDivElement>(null);
+interface Props {
+    extendBox: boolean;
+    employeesPanel: boolean | undefined;
+}
 
-    const handleClickOutside = (event: any) => {
-        if (ref.current && !ref.current?.contains(event.target)) {
-            setIsComponentVisible(false);
-        }
-    };
+export default function useComponentVisible({extendBox, employeesPanel}: Props) {
+
+    const ref = useRef<HTMLDivElement>(null);
+    const [ isComponentVisible, setIsComponentVisible ] = useState(extendBox);
 
     useEffect(() => {
-        setIsComponentVisible(initialIsVisible)
+        if(employeesPanel === false || employeesPanel === undefined) setIsComponentVisible(extendBox);
         document.addEventListener('click', handleClickOutside, true);
         return () => {
             document.removeEventListener('click', handleClickOutside, true);
         };
-    }, [initialIsVisible]);
+    }, [extendBox, employeesPanel]);
+
+    const handleClickOutside = (event: any) => {
+        if ((employeesPanel === false || employeesPanel === undefined) && (ref.current && !ref.current?.contains(event.target))) {
+            setIsComponentVisible(false);
+        }
+    };
 
     return { ref, isComponentVisible, setIsComponentVisible };
 }

@@ -14,6 +14,7 @@ import {useTranslation} from "react-i18next";
 import './utils/language/i18n';
 import {getLocalData} from "./services/localstorage/localstorage";
 import {setLanguage, setTheme} from "./store/slice/settings.slice";
+import Header from "./components/layout/Header/header.component";
 
 function Main() {
     const { i18n } = useTranslation();
@@ -41,6 +42,7 @@ function Main() {
     return (
         <ThemeProvider theme={findTheme(updateTheme)}>
             <BrowserRouter>
+                <Header />
                 <Routes />
             </BrowserRouter>
         </ThemeProvider>

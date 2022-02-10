@@ -5,6 +5,7 @@ import {UserType} from "../User/user.type";
 import {StatusEnum} from "../../enums/Status/status.enum";
 
 export interface ProjectType {
+    key?: string;
     id: string;
     parent_id: string;
     name: string;
@@ -18,5 +19,7 @@ export interface ProjectType {
     notes: Array<NotesType>;
     tasks: Array<TaskType>;
     employees: Array<UserType>
-    children: Array<ProjectType>;
+    childrenProjects: Array<ProjectType>;
+
+    isChildren?: boolean
 }

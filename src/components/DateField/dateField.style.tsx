@@ -4,7 +4,7 @@ interface DateFieldClassNames {
     container: string;
 }
 
-export const getLanguageSwitcherClassNames = (palette: IPalette): DateFieldClassNames => {
+export const getDateFieldClassNames = (palette: IPalette): DateFieldClassNames => {
     return mergeStyleSets({
         container: {
             display: "flex",

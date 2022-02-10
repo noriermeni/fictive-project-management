@@ -9,8 +9,6 @@ interface Props {
 
 export default function Wrapper({children, className}: Props) {
 
-    const { palette } = useTheme();
-
     const styles = mergeStyleSets({
         container: {
             maxWidth: 1365,
