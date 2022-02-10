@@ -7,7 +7,9 @@ interface HomeClassNames {
 export const getHomeClassNames = (palette: IPalette): HomeClassNames => {
     return mergeStyleSets({
         container: {
-            marginBlock: 20,
+            display: "flex",
+            justifyContent: "center",
+            marginBlock: 20
         },
     });
 };

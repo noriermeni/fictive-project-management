@@ -1,4 +1,5 @@
 import {StatusEnum} from "../../enums/Status/status.enum";
+import {UserType} from "../User/user.type";
 
 export interface TaskType {
     id: string;
@@ -8,7 +9,7 @@ export interface TaskType {
     created_by: string;
     created_at: Date;
     status: StatusEnum;
-    assignee: string;
+    assignee: UserType;
     reporter: string;
     comments: Array<any>;
 }

@@ -9,12 +9,12 @@ interface Props {
 }
 
 export default function SettingsFieldWrapper({children, title}: Props) {
-    const { palette } = useTheme();
-    let { container, boxList } = getSettingsFieldWrapperClassNames(palette);
+    const {palette} = useTheme();
+    let {container, boxList} = getSettingsFieldWrapperClassNames(palette);
 
     return (
         <div className={container}>
-            <Title size={'sm'} text={title} />
+            <Title size={'sm'} text={title}/>
             <div className={boxList}>
                 {children}
             </div>

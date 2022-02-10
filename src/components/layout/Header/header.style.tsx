@@ -1,8 +1,6 @@
 import {IPalette, mergeStyleSets} from "@fluentui/react";
-import {Depths} from '@fluentui/theme';
 
 interface HeaderClassNames {
-    container: string;
     innerContainer: string;
     icon: string;
     rightSide: string;
@@ -10,10 +8,6 @@ interface HeaderClassNames {
 
 export const getHeaderClassNames = (palette: IPalette): HeaderClassNames => {
     return mergeStyleSets({
-        container: {
-            width: "100%",
-            boxShadow: Depths.depth8
-        },
         innerContainer: {
             display: "flex",
             alignItems: "center",

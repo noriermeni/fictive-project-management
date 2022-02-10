@@ -15,9 +15,9 @@ import {ColorType} from "../../types/Colors/color.type";
 export default function ThemeSwitcher() {
 
     const dispatch = useDispatch();
-    const { palette } = useTheme();
-    let { activeColor, colorBox } = getThemeSwitcherClassNames(palette);
-    const { theme } = useSelector(state => (state as any).settings);
+    const {palette} = useTheme();
+    const {activeColor, colorBox} = getThemeSwitcherClassNames(palette);
+    const {theme} = useSelector(state => (state as any).settings);
     const colors = useMemo(() => themes, [])
 
     const _changeTheme = (color: ColorType) => {
@@ -27,7 +27,7 @@ export default function ThemeSwitcher() {
     const colorBoxes = () => colors.map(color => <div
         key={color.color}
         onClick={() => _changeTheme(color)}
-        style={{ backgroundColor: color.color, border: `2px solid ${color.color}` }}
+        style={{backgroundColor: color.color, border: `2px solid ${color.color}`}}
         className={classNames({
             [colorBox]: true,
             [activeColor]: color.type === theme

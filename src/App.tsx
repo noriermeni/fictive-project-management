@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, Outlet} from "react-router-dom";
 import Routes from "./routes";
 
 import {Provider, useDispatch, useSelector} from "react-redux";
@@ -44,6 +44,7 @@ function Main() {
             <BrowserRouter>
                 <Header />
                 <Routes />
+                <Outlet />
             </BrowserRouter>
         </ThemeProvider>
     );

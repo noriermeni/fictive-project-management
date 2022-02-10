@@ -20,6 +20,5 @@ export interface ProjectType {
     tasks: Array<TaskType>;
     employees: Array<UserType>
     childrenProjects: Array<ProjectType>;
-
     isChildren?: boolean
 }

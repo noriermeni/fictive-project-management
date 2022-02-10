@@ -1,6 +1,6 @@
 import React from "react";
-import {mergeStyleSets, useTheme} from "@fluentui/react";
 import classNames from "classnames";
+import {mergeStyleSets} from "@fluentui/react";
 
 interface Props {
     children: React.ReactNode;

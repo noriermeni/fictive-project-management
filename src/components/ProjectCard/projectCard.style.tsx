@@ -1,5 +1,5 @@
-import { IPalette, mergeStyleSets } from "@fluentui/react";
-import { Depths } from "@fluentui/theme";
+import {IPalette, mergeStyleSets} from "@fluentui/react";
+import {Depths} from "@fluentui/theme";
 
 interface ProjectCardClassNames {
     container: string;

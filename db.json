@@ -4,7 +4,7 @@
     "last_name": "Ermeni",
     "position": "React developer"
   },
-  "projects": [
+  "project": [
     {
       "id": "project_1",
       "parent_id": "",
@@ -45,10 +45,20 @@
           "title": "",
           "description": "",
           "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
-          "created_by": "",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
           "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
           "status": "IN_PROGRESS",
-          "assignee": "Elton John",
+          "assignee": {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
           "reporter": "",
           "comments": []
         },
@@ -57,7 +67,979 @@
           "title": "",
           "description": "",
           "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
-          "created_by": "",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "COMPLETED",
+          "comments": []
+        }
+      ],
+      "employees": [
+        {
+          "id": "employee_1",
+          "first_name": "Rinor",
+          "last_name": "Ermeni",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_2",
+          "first_name": "Elon",
+          "last_name": "Musk",
+          "position": "Funny men"
+        },
+        {
+          "id": "employee_3",
+          "first_name": "Mark",
+          "last_name": "Zuckerberg",
+          "position": "Alien"
+        },
+        {
+          "id": "employee_4",
+          "first_name": "Elton",
+          "last_name": "John",
+          "position": "King of Song"
+        },
+        {
+          "id": "employee_5",
+          "first_name": "Charlie",
+          "last_name": "Chaplin",
+          "position": "CEO/Founder of Jupiter"
+        }
+      ]
+    },
+    {
+      "id": "project_1.1",
+      "parent_id": "project_1",
+      "name": "Costumer satisfaction",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "created_by": "Charlie Chaplin",
+      "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+      "finish_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+      "evaluation": 50,
+      "attachment": [
+        {
+          "id": "attachment_1",
+          "type": "xslx",
+          "url": ""
+        },
+        {
+          "id": "attachment_2",
+          "type": "zip",
+          "url": ""
+        },
+        {
+          "id": "attachment_3",
+          "type": "docx",
+          "url": ""
+        }
+      ],
+      "notes": [
+        {
+          "id": "note_1",
+          "type": "note",
+          "text": ""
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task_1.1.2",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "IN_PROGRESS",
+          "assignee": {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "reporter": "",
+          "comments": []
+        },
+        {
+          "id": "task_1.1.2",
+          "title": "",
+          "description": "",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "COMPLETED",
+          "comments": []
+        }
+      ],
+      "employees": [
+        {
+          "id": "employee_1",
+          "first_name": "Rinor",
+          "last_name": "Ermeni",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_2",
+          "first_name": "Elon",
+          "last_name": "Musk",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_3",
+          "first_name": "Mark",
+          "last_name": "Zuckerberg",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_4",
+          "first_name": "Elton",
+          "last_name": "John",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_5",
+          "first_name": "Charlie",
+          "last_name": "Chaplin",
+          "position": "Software Engineer"
+        }
+      ]
+    },
+    {
+      "id": "project_1.2",
+      "parent_id": "project_1",
+      "name": "Stock",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "created_by": "Charlie Chaplin",
+      "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+      "finish_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+      "evaluation": 50,
+      "attachment": [
+        {
+          "id": "attachment_1",
+          "type": "xslx",
+          "url": ""
+        },
+        {
+          "id": "attachment_2",
+          "type": "zip",
+          "url": ""
+        },
+        {
+          "id": "attachment_3",
+          "type": "docx",
+          "url": ""
+        }
+      ],
+      "notes": [
+        {
+          "id": "note_1",
+          "type": "note",
+          "text": ""
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task_1.2.1",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by": {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "IN_PROGRESS",
+          "assignee": {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "reporter": "",
+          "comments": []
+        },
+        {
+          "id": "task_1.2.2",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by": {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "COMPLETED",
+          "comments": []
+        }
+      ],
+      "employees": [
+        {
+          "id": "employee_1",
+          "first_name": "Rinor",
+          "last_name": "Ermeni",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_2",
+          "first_name": "Elon",
+          "last_name": "Musk",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_3",
+          "first_name": "Mark",
+          "last_name": "Zuckerberg",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_4",
+          "first_name": "Elton",
+          "last_name": "John",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_5",
+          "first_name": "Charlie",
+          "last_name": "Chaplin",
+          "position": "Software Engineer"
+        }
+      ]
+    },
+    {
+      "id": "project_1.2.1",
+      "parent_id": "project_1.2",
+      "name": "Stock per region",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "created_by": {
+        "id": "employee_2",
+        "first_name": "Charlie",
+        "last_name": "Chaplin",
+        "position": "Funny men"
+      },
+      "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+      "finish_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+      "evaluation": 50,
+      "attachment": [
+        {
+          "id": "attachment_1",
+          "type": "xslx",
+          "url": ""
+        },
+        {
+          "id": "attachment_2",
+          "type": "zip",
+          "url": ""
+        },
+        {
+          "id": "attachment_3",
+          "type": "docx",
+          "url": ""
+        }
+      ],
+      "notes": [
+        {
+          "id": "note_1",
+          "type": "note",
+          "text": ""
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task_1.2.1.1",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by": {
+            "id": "employee_2",
+            "first_name": "Angela",
+            "last_name": "Merkel",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "IN_PROGRESS",
+          "assignee": {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "reporter": "",
+          "comments": []
+        },
+        {
+          "id": "task_1.2.1.2",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by": {
+            "id": "employee_2",
+            "first_name": "Nikola",
+            "last_name": "Tesla",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "COMPLETED",
+          "comments": []
+        }
+      ],
+      "employees": [
+        {
+          "id": "employee_1",
+          "first_name": "Rinor",
+          "last_name": "Ermeni",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_2",
+          "first_name": "Elon",
+          "last_name": "Musk",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_3",
+          "first_name": "Mark",
+          "last_name": "Zuckerberg",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_4",
+          "first_name": "Elton",
+          "last_name": "John",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_5",
+          "first_name": "Charlie",
+          "last_name": "Chaplin",
+          "position": "Software Engineer"
+        }
+      ]
+    },
+    {
+      "id": "project_1.3",
+      "parent_id": "project_1",
+      "name": "Sales",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "created_by": {
+        "id": "employee_2",
+        "first_name": "Warren",
+        "last_name": "Buffet",
+        "position": "Funny men"
+      },
+      "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+      "finish_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+      "evaluation": 50,
+      "attachment": [
+        {
+          "id": "attachment_1",
+          "type": "xslx",
+          "url": ""
+        },
+        {
+          "id": "attachment_2",
+          "type": "zip",
+          "url": ""
+        },
+        {
+          "id": "attachment_3",
+          "type": "docx",
+          "url": ""
+        }
+      ],
+      "notes": [
+        {
+          "id": "note_1",
+          "type": "note",
+          "text": ""
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task_1.3.1",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by": {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "IN_PROGRESS",
+          "assignee": {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "reporter": "",
+          "comments": []
+        },
+        {
+          "id": "task_1.3.2",
+          "title": "",
+          "description": "",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by": {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "COMPLETED",
+          "comments": []
+        }
+      ],
+      "employees": [
+        {
+          "id": "employee_1",
+          "first_name": "Rinor",
+          "last_name": "Ermeni",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_2",
+          "first_name": "Elon",
+          "last_name": "Musk",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_3",
+          "first_name": "Mark",
+          "last_name": "Zuckerberg",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_4",
+          "first_name": "Elton",
+          "last_name": "John",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_5",
+          "first_name": "Charlie",
+          "last_name": "Chaplin",
+          "position": "Software Engineer"
+        }
+      ]
+    },
+    {
+      "id": "project_2",
+      "parent_id": "",
+      "name": "Marketing",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "created_by": {
+        "id": "employee_2",
+        "first_name": "Elon",
+        "last_name": "Musk",
+        "position": "Funny men"
+      },
+      "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+      "finish_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+      "evaluation": 100,
+      "status": "COMPLETED",
+      "attachment": [
+        {
+          "id": "attachment_1",
+          "type": "xslx",
+          "url": ""
+        },
+        {
+          "id": "attachment_2",
+          "type": "zip",
+          "url": ""
+        },
+        {
+          "id": "attachment_3",
+          "type": "docx",
+          "url": ""
+        }
+      ],
+      "notes": [
+        {
+          "id": "note_1",
+          "type": "note",
+          "text": ""
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task_1",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by": {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "IN_PROGRESS",
+          "assignee": {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "reporter": "",
+          "comments": []
+        },
+        {
+          "id": "task_2",
+          "title": "",
+          "description": "",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by": {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "COMPLETED",
+          "comments": []
+        }
+      ],
+      "employees": [
+        {
+          "id": "employee_1",
+          "first_name": "Rinor",
+          "last_name": "Ermeni",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_2",
+          "first_name": "Elon",
+          "last_name": "Musk",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_3",
+          "first_name": "Mark",
+          "last_name": "Zuckerberg",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_4",
+          "first_name": "Elton",
+          "last_name": "John",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_5",
+          "first_name": "Charlie",
+          "last_name": "Chaplin",
+          "position": "Software Engineer"
+        }
+      ]
+    },
+    {
+      "id": "project_2.1",
+      "parent_id": "project_2",
+      "name": "Promotions",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "created_by": "Charlie Chaplin",
+      "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+      "finish_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+      "evaluation": 100,
+      "status": "COMPLETED",
+      "attachment": [
+        {
+          "id": "attachment_1",
+          "type": "xslx",
+          "url": ""
+        },
+        {
+          "id": "attachment_2",
+          "type": "zip",
+          "url": ""
+        },
+        {
+          "id": "attachment_3",
+          "type": "docx",
+          "url": ""
+        }
+      ],
+      "notes": [
+        {
+          "id": "note_1",
+          "type": "note",
+          "text": ""
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task_1",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "IN_PROGRESS",
+          "assignee": {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "reporter": "",
+          "comments": []
+        },
+        {
+          "id": "task_2",
+          "title": "",
+          "description": "",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "COMPLETED",
+          "comments": []
+        }
+      ],
+      "employees": [
+        {
+          "id": "employee_1",
+          "first_name": "Rinor",
+          "last_name": "Ermeni",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_2",
+          "first_name": "Elon",
+          "last_name": "Musk",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_3",
+          "first_name": "Mark",
+          "last_name": "Zuckerberg",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_4",
+          "first_name": "Elton",
+          "last_name": "John",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_5",
+          "first_name": "Charlie",
+          "last_name": "Chaplin",
+          "position": "Software Engineer"
+        }
+      ]
+    },
+    {
+      "id": "project_2.1.1",
+      "parent_id": "project_2.1",
+      "name": "Campaigns",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "created_by": "Charlie Chaplin",
+      "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+      "finish_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+      "evaluation": 100,
+      "status": "COMPLETED",
+      "attachment": [
+        {
+          "id": "attachment_1",
+          "type": "xslx",
+          "url": ""
+        },
+        {
+          "id": "attachment_2",
+          "type": "zip",
+          "url": ""
+        },
+        {
+          "id": "attachment_3",
+          "type": "docx",
+          "url": ""
+        }
+      ],
+      "notes": [
+        {
+          "id": "note_1",
+          "type": "note",
+          "text": ""
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task_1",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "IN_PROGRESS",
+          "assignee": {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "reporter": "",
+          "comments": []
+        },
+        {
+          "id": "task_2",
+          "title": "",
+          "description": "",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "COMPLETED",
+          "comments": []
+        }
+      ],
+      "employees": [
+        {
+          "id": "employee_1",
+          "first_name": "Rinor",
+          "last_name": "Ermeni",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_2",
+          "first_name": "Elon",
+          "last_name": "Musk",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_3",
+          "first_name": "Mark",
+          "last_name": "Zuckerberg",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_4",
+          "first_name": "Elton",
+          "last_name": "John",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_5",
+          "first_name": "Charlie",
+          "last_name": "Chaplin",
+          "position": "Software Engineer"
+        }
+      ]
+    },
+    {
+      "id": "project_2.1.1.1",
+      "parent_id": "project_2.1.1",
+      "name": "Themes",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "created_by": "Charlie Chaplin",
+      "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+      "finish_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+      "evaluation": 100,
+      "status": "COMPLETED",
+      "attachment": [
+        {
+          "id": "attachment_1",
+          "type": "xslx",
+          "url": ""
+        },
+        {
+          "id": "attachment_2",
+          "type": "zip",
+          "url": ""
+        },
+        {
+          "id": "attachment_3",
+          "type": "docx",
+          "url": ""
+        }
+      ],
+      "notes": [
+        {
+          "id": "note_1",
+          "type": "note",
+          "text": ""
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task_1",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "IN_PROGRESS",
+          "assignee": {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "reporter": "",
+          "comments": []
+        },
+        {
+          "id": "task_2",
+          "title": "",
+          "description": "",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "COMPLETED",
+          "comments": []
+        }
+      ],
+      "employees": [
+        {
+          "id": "employee_1",
+          "first_name": "Rinor",
+          "last_name": "Ermeni",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_2",
+          "first_name": "Elon",
+          "last_name": "Musk",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_3",
+          "first_name": "Mark",
+          "last_name": "Zuckerberg",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_4",
+          "first_name": "Elton",
+          "last_name": "John",
+          "position": "Software Engineer"
+        },
+        {
+          "id": "employee_5",
+          "first_name": "Charlie",
+          "last_name": "Chaplin",
+          "position": "Software Engineer"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "project_1",
+      "parent_id": "",
+      "name": "Retail",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "created_by": "Charlie Chaplin",
+      "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+      "finish_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+      "evaluation": 50,
+      "status": "IN_PROGRESS",
+      "attachment": [
+        {
+          "id": "attachment_1",
+          "type": "xslx",
+          "url": ""
+        },
+        {
+          "id": "attachment_2",
+          "type": "zip",
+          "url": ""
+        },
+        {
+          "id": "attachment_3",
+          "type": "docx",
+          "url": ""
+        }
+      ],
+      "notes": [
+        {
+          "id": "note_1",
+          "type": "note",
+          "text": ""
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task_1",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "IN_PROGRESS",
+          "assignee": {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
+          "reporter": "",
+          "comments": []
+        },
+        {
+          "id": "task_2",
+          "title": "",
+          "description": "",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
           "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
           "status": "COMPLETED",
           "comments": []
@@ -132,13 +1114,23 @@
           "tasks": [
             {
               "id": "task_1.1.2",
-              "title": "",
-              "description": "",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
               "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
-              "created_by": "",
+              "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
               "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
               "status": "IN_PROGRESS",
-              "assignee": "Elton John",
+              "assignee": {
+                "id": "employee_2",
+                "first_name": "Elon",
+                "last_name": "Musk",
+                "position": "Funny men"
+              },
               "reporter": "",
               "comments": []
             },
@@ -147,7 +1139,12 @@
               "title": "",
               "description": "",
               "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
-              "created_by": "",
+              "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
               "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
               "status": "COMPLETED",
               "comments": []
@@ -225,13 +1222,23 @@
           "tasks": [
             {
               "id": "task_1.2.1",
-              "title": "",
-              "description": "",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
               "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
-              "created_by": "",
+              "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
               "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
               "status": "IN_PROGRESS",
-              "assignee": "Elton John",
+              "assignee": {
+                "id": "employee_2",
+                "first_name": "Elon",
+                "last_name": "Musk",
+                "position": "Funny men"
+              },
               "reporter": "",
               "comments": []
             },
@@ -240,7 +1247,12 @@
               "title": "",
               "description": "",
               "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
-              "created_by": "",
+              "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
               "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
               "status": "COMPLETED",
               "comments": []
@@ -321,7 +1333,12 @@
                   "created_by": "Angelina Jolie",
                   "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
                   "status": "IN_PROGRESS",
-                  "assignee": "Elton John",
+                  "assignee": {
+                    "id": "employee_2",
+                    "first_name": "Elon",
+                    "last_name": "Musk",
+                    "position": "Funny men"
+                  },
                   "reporter": "",
                   "comments": []
                 },
@@ -410,13 +1427,23 @@
           "tasks": [
             {
               "id": "task_1.3.1",
-              "title": "",
-              "description": "",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
               "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
-              "created_by": "",
+              "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
               "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
               "status": "IN_PROGRESS",
-              "assignee": "Elton John",
+              "assignee": {
+                "id": "employee_2",
+                "first_name": "Elon",
+                "last_name": "Musk",
+                "position": "Funny men"
+              },
               "reporter": "",
               "comments": []
             },
@@ -425,7 +1452,12 @@
               "title": "",
               "description": "",
               "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
-              "created_by": "",
+              "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
               "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
               "status": "COMPLETED",
               "comments": []
@@ -506,13 +1538,23 @@
       "tasks": [
         {
           "id": "task_1",
-          "title": "",
-          "description": "",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
           "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
-          "created_by": "",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
           "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
           "status": "IN_PROGRESS",
-          "assignee": "Elton John",
+          "assignee": {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
           "reporter": "",
           "comments": []
         },
@@ -521,7 +1563,12 @@
           "title": "",
           "description": "",
           "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
-          "created_by": "",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
           "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
           "status": "COMPLETED",
           "comments": []
@@ -597,13 +1644,23 @@
           "tasks": [
             {
               "id": "task_1",
-              "title": "",
-              "description": "",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
               "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
-              "created_by": "",
+              "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
               "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
               "status": "IN_PROGRESS",
-              "assignee": "Elton John",
+              "assignee": {
+                "id": "employee_2",
+                "first_name": "Elon",
+                "last_name": "Musk",
+                "position": "Funny men"
+              },
               "reporter": "",
               "comments": []
             },
@@ -612,7 +1669,12 @@
               "title": "",
               "description": "",
               "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
-              "created_by": "",
+              "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
               "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
               "status": "COMPLETED",
               "comments": []
@@ -688,13 +1750,23 @@
               "tasks": [
                 {
                   "id": "task_1",
-                  "title": "",
-                  "description": "",
+                  "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                  "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                   "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
-                  "created_by": "",
+                  "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
                   "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
                   "status": "IN_PROGRESS",
-                  "assignee": "Elton John",
+                  "assignee": {
+                    "id": "employee_2",
+                    "first_name": "Elon",
+                    "last_name": "Musk",
+                    "position": "Funny men"
+                  },
                   "reporter": "",
                   "comments": []
                 },
@@ -703,7 +1775,12 @@
                   "title": "",
                   "description": "",
                   "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
-                  "created_by": "",
+                  "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
                   "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
                   "status": "COMPLETED",
                   "comments": []
@@ -779,13 +1856,23 @@
                   "tasks": [
                     {
                       "id": "task_1",
-                      "title": "",
-                      "description": "",
+                      "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                       "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
-                      "created_by": "",
+                      "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
                       "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
                       "status": "IN_PROGRESS",
-                      "assignee": "Elton John",
+                      "assignee": {
+                        "id": "employee_2",
+                        "first_name": "Elon",
+                        "last_name": "Musk",
+                        "position": "Funny men"
+                      },
                       "reporter": "",
                       "comments": []
                     },
@@ -794,7 +1881,12 @@
                       "title": "",
                       "description": "",
                       "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
-                      "created_by": "",
+                      "created_by":  {
+            "id": "employee_2",
+            "first_name": "Elon",
+            "last_name": "Musk",
+            "position": "Funny men"
+          },
                       "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
                       "status": "COMPLETED",
                       "comments": []

@@ -6,12 +6,13 @@ interface HeaderClassNames {
     small: string;
     medium: string;
     large: string;
+    xLarge: string;
 }
 
 export const getTitleClassNames = (palette: IPalette): HeaderClassNames => {
     return mergeStyleSets({
         textStyle: {
-            color: palette.neutralPrimaryAlt,
+            color: palette.tealDark,
             paddingBottom: 5,
         },
         xSmall: {
@@ -28,6 +29,10 @@ export const getTitleClassNames = (palette: IPalette): HeaderClassNames => {
         },
         large: {
             fontSize: '18px',
+            fontWeight: 600
+        },
+        xLarge: {
+            fontSize: '25px',
             fontWeight: 600
         }
     });

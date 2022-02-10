@@ -5,7 +5,7 @@ import classNames from "classnames";
 import {getProjectCardClassNames} from "./projectCard.style";
 import {Icon, ProgressIndicator, useTheme} from "@fluentui/react";
 import useComponentVisible from "../../hook/useComponentVisible";
-import {calculatePercentageOfProgress} from "../../utils/Calculation";
+import {calculatePercentageOfProgress} from "../../utils/calculation";
 import DateField from "../DateField/dateField.component";
 import UsersList from "../UsersList/usersList.component";
 import Title from "../Title/title.component";

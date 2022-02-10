@@ -1,4 +1,4 @@
-import { IPalette, mergeStyleSets } from "@fluentui/react";
+import {IPalette, mergeStyleSets} from "@fluentui/react";
 
 interface ProjectListClassNames {
     container: string;

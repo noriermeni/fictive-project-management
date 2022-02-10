@@ -13,9 +13,7 @@ export const getThemeSwitcherClassNames = (palette: IPalette): HeaderClassNames 
             display: "flex",
             flexDirection: "column"
         },
-        colorBoxList: {
-
-        },
+        colorBoxList: {},
         colorBox: {
             width: 30,
             height: 30,

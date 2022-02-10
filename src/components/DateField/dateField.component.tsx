@@ -5,7 +5,7 @@ import { getDateFieldClassNames } from "./dateField.style";
 
 import Title from "../Title/title.component";
 
-import { formatDate } from "../../utils/DateFormats/dateFormats";
+import { formatDate } from "../../utils/dateFormatter";
 
 interface Props {
     label: string;

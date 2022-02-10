@@ -21,10 +21,6 @@ export default function LanguageSwitcher() {
 
     const languageList = useMemo(() => languageData, [])
 
-    useEffect(() => {
-        console.log(languageList)
-    }, [languageList])
-
     const _changeLanguage = (lang: string) => {
         dispatch(setLanguage(lang));
     }
