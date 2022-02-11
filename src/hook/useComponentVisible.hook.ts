@@ -5,7 +5,7 @@ interface Props {
     employeesPanel: boolean | undefined;
 }
 
-export default function useComponentVisible({extendBox, employeesPanel}: Props) {
+export default function useComponentVisibleHook({extendBox, employeesPanel}: Props) {
 
     const ref = useRef<HTMLDivElement>(null);
     const [ isComponentVisible, setIsComponentVisible ] = useState(extendBox);

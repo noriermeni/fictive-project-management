@@ -4,7 +4,7 @@ import {useSelector} from "react-redux";
 import classNames from "classnames";
 import {getProjectCardClassNames} from "./projectCard.style";
 import {Icon, ProgressIndicator, useTheme} from "@fluentui/react";
-import useComponentVisible from "../../hook/useComponentVisible";
+import useComponentVisibleHook from "../../hook/useComponentVisible.hook";
 import {calculatePercentageOfProgress} from "../../utils/calculation";
 import DateField from "../DateField/dateField.component";
 import UsersList from "../UsersList/usersList.component";
@@ -48,7 +48,7 @@ export default function ProjectCard(props: ProjectType) {
     } = getProjectCardClassNames(palette, isChildren);
     const [extendBox, setExtendBox] = useState<boolean>(false);
     const {employeesPanel} = useSelector(state => (state as any).project);
-    const {ref, isComponentVisible} = useComponentVisible({extendBox, employeesPanel});
+    const {ref, isComponentVisible} = useComponentVisibleHook({extendBox, employeesPanel});
 
     const isChildrenOrExtend = () => isComponentVisible || isChildren;
 

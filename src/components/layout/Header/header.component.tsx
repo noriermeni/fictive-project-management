@@ -13,7 +13,7 @@ export default function Header() {
 
     const {data} = useData('profile/');
     const {palette} = useTheme();
-    const {innerContainer, icon, rightSide} = getHeaderClassNames(palette);
+    const {innerContainer, icon, rightSide, outerContainer} = getHeaderClassNames(palette);
     const [isOpen, {setTrue: openPanel, setFalse: dismissPanel}] = useBoolean(false);
     const [user, setUser] = useState<UserType>();
 
@@ -22,7 +22,7 @@ export default function Header() {
     }, [data])
 
     return (
-        <Box>
+        <Box className={outerContainer}>
             <Wrapper className={innerContainer}>
                 <Logo/>
                 <div className={rightSide}>

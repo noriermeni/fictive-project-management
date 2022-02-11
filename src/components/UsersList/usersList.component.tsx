@@ -1,29 +1,37 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import {useDispatch} from "react-redux";
-import {Facepile, OverflowButtonType, Persona, PersonaPresence, PersonaSize, useTheme} from "@fluentui/react";
-import Title from "../Title/title.component";
+import {Persona, PersonaPresence, PersonaSize} from "@fluentui/react";
 import {UserType} from "../../types/User/user.type";
 import {setSelectedUsers} from "../../store/slice/project.slice";
-import {getDateFieldClassNames} from "../DateField/dateField.style";
 import CustomFacepile from "../CustomFacepile/customFacepile.component";
+import SettingsFieldWrapper from "../SettingsField/settingsFieldWrapper.component";
 
 interface Props {
     employees: Array<UserType>;
     label?: string;
     maxEmployeesDisplayable?: number;
     showDetails?: boolean;
+    hidePersonaDetails?: boolean;
+    showUnknownPersonaCoin?: boolean;
+    className?: string;
     circleSize?: PersonaSize;
 }
 
 export default function UsersList(props: Props) {
-    const {employees, label, maxEmployeesDisplayable, showDetails = false, circleSize = PersonaSize.size32} = props;
+    const {
+        employees,
+        label,
+        className,
+        maxEmployeesDisplayable,
+        circleSize = PersonaSize.size32,
+        showDetails = false,
+        hidePersonaDetails = false,
+        showUnknownPersonaCoin = false
+    } = props;
     const dispatch = useDispatch();
-    const {palette} = useTheme();
-    const {container} = getDateFieldClassNames(palette);
 
     return (
-        <div className={container}>
-            {label && <Title text={`${label}:`}/>}
+        <SettingsFieldWrapper title={label} className={className}>
             {!showDetails && <CustomFacepile employees={employees} maxEmployeesDisplayable={maxEmployeesDisplayable}
                                              handleClick={() => dispatch(setSelectedUsers(employees))}/>}
             {showDetails && employees.map(employee => <Persona
@@ -33,7 +41,9 @@ export default function UsersList(props: Props) {
                 showSecondaryText={!!employee?.position}
                 size={circleSize}
                 presence={PersonaPresence.none}
+                hidePersonaDetails={hidePersonaDetails}
+                showUnknownPersonaCoin={showUnknownPersonaCoin}
             />)}
-        </div>
+        </SettingsFieldWrapper>
     )
 }

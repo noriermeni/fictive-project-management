@@ -1,10 +1,8 @@
 import React, {useEffect, useState} from "react";
-import {TaskType} from "../../../types/Task/task.type";
+import {useSelector} from "react-redux";
+import {manipulateTasksByStatus} from "../../../utils/manipulateTasksByStatus";
 import TaskListCard from "../TaskListCard/taskListCard.component";
 import {StatusDetailsType} from "../../../types/StatusDetailsType/statusDetails.type";
-import {manipulateTasksByStatus} from "../../../utils/manipulateTasksByStatus";
-import {useSelector} from "react-redux";
-import ProjectHeader from "../../ProjectHeader/projectHeader.component";
 
 export default function TaskList() {
     const [statusList, setStatusList] = useState<Array<StatusDetailsType>>([]);
@@ -17,7 +15,6 @@ export default function TaskList() {
 
     return (
         <div>
-            list
             {statusList && statusList.map((status: StatusDetailsType) => <TaskListCard {...status} />)}
         </div>
     );

@@ -1,12 +1,12 @@
 import React, {useEffect} from "react";
+import {useDispatch} from "react-redux";
 import {useParams} from "react-router-dom";
 import useData from "../../hook/useData.hook";
+import {setSelectedProjectTasks} from "../../store/slice/project.slice";
 import ProjectDetails from "../../components/Templates/ProjectDetails/projectDetails.component";
 import DataSpinner from "../../components/DataSpinner/dataSpinner.component";
 import {FetchDataType} from "../../types/FetchData/fetchData.type";
 import {ProjectType} from "../../types/Project/project.type";
-import {useDispatch} from "react-redux";
-import {setSelectedProjectTasks} from "../../store/slice/project.slice";
 
 const Project = () => {
     const dispatch = useDispatch();
@@ -14,6 +14,7 @@ const Project = () => {
     const {data, loading}: FetchDataType<ProjectType> = useData(`project/${id}`);
 
     useEffect(() => {
+        console.log(`data `, data)
         //@ts-ignore
         data?.tasks && dispatch(setSelectedProjectTasks({tasks: data?.tasks, children: data?.childrenProjects
     }));

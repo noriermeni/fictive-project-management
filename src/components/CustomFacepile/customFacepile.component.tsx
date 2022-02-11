@@ -10,7 +10,7 @@ interface Props {
 }
 
 export default function CustomFacepile(props: Props) {
-    const {employees, maxEmployeesDisplayable, handleClick} = props;
+    const {employees, maxEmployeesDisplayable = 1, handleClick} = props;
     const [employeesFacepileDetails, setEmployeesFacepileDetails] = useState<Array<{ personaName: string }>>([]);
 
     useEffect(() => {
@@ -22,6 +22,7 @@ export default function CustomFacepile(props: Props) {
     return (
         <Facepile
             personas={employeesFacepileDetails}
+            showTooltip
             maxDisplayablePersonas={maxEmployeesDisplayable}
             overflowButtonType={OverflowButtonType.descriptive}
             overflowButtonProps={{ onClick: () => handleClick && handleClick() }}

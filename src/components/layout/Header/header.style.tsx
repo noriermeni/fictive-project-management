@@ -4,10 +4,17 @@ interface HeaderClassNames {
     innerContainer: string;
     icon: string;
     rightSide: string;
+    outerContainer: string;
 }
 
 export const getHeaderClassNames = (palette: IPalette): HeaderClassNames => {
     return mergeStyleSets({
+        outerContainer: {
+            position: "sticky",
+            top: 0,
+            backgroundColor: palette.white,
+            zIndex: 2
+        },
         innerContainer: {
             display: "flex",
             alignItems: "center",

@@ -1,21 +1,26 @@
-import React from "react";
+import React, {useRef} from "react";
 import {Outlet} from "react-router-dom";
+import {mergeStyleSets, useTheme} from "@fluentui/react";
+import {useElementResize} from "../../../hook/useElementResize.hook";
 import Wrapper from "../../layout/Wrapper/wrapper.component";
-import TaskList from "../../Boards/List/tasksList.component";
 import ProjectHeader from "../../ProjectHeader/projectHeader.component";
 import {ProjectType} from "../../../types/Project/project.type";
 
 const ProjectDetails = (props: ProjectType) => {
-    const {
-        name,
-        tasks,
-        employees
-    } = props;
+    const headerContainerRef = useRef<HTMLDivElement>(null);
+    const {elementHeight} = useElementResize(headerContainerRef);
+
+    const styles = mergeStyleSets({
+        container: {
+            paddingBlock: 20,
+            marginBottom: `${elementHeight}px`
+        },
+    });
 
     return (
-        <Wrapper>
-            <ProjectHeader title={name} employees={employees} />
-            <Outlet />
+        <Wrapper className={styles.container}>
+            <Outlet/>
+            <ProjectHeader {...props} headerContainerRef={headerContainerRef} headerHeight={elementHeight}/>
         </Wrapper>
     )
 }

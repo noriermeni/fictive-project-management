@@ -42,8 +42,8 @@
       "tasks": [
         {
           "id": "task_1",
-          "title": "",
-          "description": "",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
           "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
           "created_by":  {
             "id": "employee_2",
@@ -69,8 +69,113 @@
           "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
           "created_by":  {
             "id": "employee_2",
-            "first_name": "Elon",
-            "last_name": "Musk",
+            "first_name": "Rinor",
+            "last_name": "Ermeni",
+            "position": "Funny men"
+          },
+          "assignee":  {
+            "id": "employee_2",
+            "first_name": "Rinor",
+            "last_name": "Ermeni",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "COMPLETED",
+          "comments": []
+        },
+        {
+          "id": "task_3",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Charlie",
+            "last_name": "Chaplin",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "IN_PROGRESS",
+          "comments": []
+        },
+        {
+          "id": "task_4",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "John",
+            "last_name": "Belushi",
+            "position": "Funny men"
+          },
+          "assignee":  {
+            "id": "employee_2",
+            "first_name": "John",
+            "last_name": "Belushi",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "PAUSED",
+          "comments": []
+        },
+        {
+          "id": "task_5",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Neil",
+            "last_name": "Sedaka",
+            "position": "Funny men"
+          },
+          "assignee":  {
+            "id": "employee_2",
+            "first_name": "Neil",
+            "last_name": "Sedaka",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "WAITING",
+          "comments": []
+        },
+        {
+          "id": "task_6",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "William Bruce",
+            "last_name": "Rose",
+            "position": "Funny men"
+          },
+          "assignee":  {
+            "id": "employee_2",
+            "first_name": "William Bruce",
+            "last_name": "Rose",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "PAUSED",
+          "comments": []
+        },
+        {
+          "id": "task_7",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Syd",
+            "last_name": "Barrett",
+            "position": "Funny men"
+          },
+          "assignee":  {
+            "id": "employee_2",
+            "first_name": "Syd",
+            "last_name": "Barrett",
             "position": "Funny men"
           },
           "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
@@ -1036,8 +1141,113 @@
           "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
           "created_by":  {
             "id": "employee_2",
-            "first_name": "Elon",
-            "last_name": "Musk",
+            "first_name": "Rinor",
+            "last_name": "Ermeni",
+            "position": "Funny men"
+          },
+          "assignee":  {
+            "id": "employee_2",
+            "first_name": "Rinor",
+            "last_name": "Ermeni",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "COMPLETED",
+          "comments": []
+        },
+        {
+          "id": "task_3",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Charlie",
+            "last_name": "Chaplin",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "IN_PROGRESS",
+          "comments": []
+        },
+        {
+          "id": "task_4",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "John",
+            "last_name": "Belushi",
+            "position": "Funny men"
+          },
+          "assignee":  {
+            "id": "employee_2",
+            "first_name": "John",
+            "last_name": "Belushi",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "PAUSED",
+          "comments": []
+        },
+        {
+          "id": "task_5",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Neil",
+            "last_name": "Sedaka",
+            "position": "Funny men"
+          },
+          "assignee":  {
+            "id": "employee_2",
+            "first_name": "Neil",
+            "last_name": "Sedaka",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "WAITING",
+          "comments": []
+        },
+        {
+          "id": "task_6",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "William Bruce",
+            "last_name": "Rose",
+            "position": "Funny men"
+          },
+          "assignee":  {
+            "id": "employee_2",
+            "first_name": "William Bruce",
+            "last_name": "Rose",
+            "position": "Funny men"
+          },
+          "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "status": "PAUSED",
+          "comments": []
+        },
+        {
+          "id": "task_7",
+          "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+          "estimation_date": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
+          "created_by":  {
+            "id": "employee_2",
+            "first_name": "Syd",
+            "last_name": "Barrett",
+            "position": "Funny men"
+          },
+          "assignee":  {
+            "id": "employee_2",
+            "first_name": "Syd",
+            "last_name": "Barrett",
             "position": "Funny men"
           },
           "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",

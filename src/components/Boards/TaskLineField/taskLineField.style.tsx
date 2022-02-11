@@ -6,17 +6,22 @@ interface TaskLineFieldClassNames {
     paddingInline: string;
     iconSettings: string;
     columnSize: string;
+    customUserItemContainer: string;
 }
 
 export const getTaskLineFieldClassNames = (palette: IPalette): TaskLineFieldClassNames => {
     return mergeStyleSets({
         container: {
-            display: "flex",
+                display: "flex",
             justifyContent: "space-between",
             backgroundColor: palette.neutralLighter,
             minHeight: 32,
             margin: 2,
-            padding: 4
+            padding: 4,
+            '@media(max-width: 885px)': {
+                flexDirection: "column",
+                maxWidth: "100%",
+            }
         },
         row: {
             display: "flex",
@@ -25,6 +30,11 @@ export const getTaskLineFieldClassNames = (palette: IPalette): TaskLineFieldClas
             minWidth: "max-content",
             span: {
                 paddingBottom: 0,
+            },
+            '@media(max-width: 885px)': {
+                width: "100%",
+                justifyContent: "space-around",
+                marginBottom: 10
             }
         },
         paddingInline: {
@@ -35,6 +45,10 @@ export const getTaskLineFieldClassNames = (palette: IPalette): TaskLineFieldClas
             fontSize: 20
         },
         columnSize: {
+            minWidth: 32
+        },
+        customUserItemContainer: {
+            paddingBlock: 0
         }
     });
 };
