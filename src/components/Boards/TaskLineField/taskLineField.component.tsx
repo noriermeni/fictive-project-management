@@ -22,7 +22,7 @@ export default function TaskLineField(props: TaskType) {
         <div className={container}>
             <div className={row}>
                 <StatusCircle status={status} />
-                <Title className={paddingInline} size={'sm'} text={title} />
+                <Title className={paddingInline} size={'sm'} text={title ? title : `Title not found!`} />
             </div>
             <div className={row}>
                 <Icon className={classNames({
