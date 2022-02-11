@@ -4,10 +4,10 @@ import {ListOfStatuses} from "../types/StatusDetailsType/listOfStatuses";
 
 export const manipulateTasksByStatus = (tasks: Array<TaskType>) => {
     let currentStatusList: ListOfStatuses = {
-        in_progress: { name: "On Going", tasks: [] },
-        waiting: { name: "On hold", tasks: [] },
-        paused: { name: "Paused", tasks: [] },
-        completed: { name: "Completed", tasks: [] }
+        in_progress: { name: "On Going", status: StatusEnum.IN_PROGRESS, tasks: [] },
+        waiting: { name: "On hold", status: StatusEnum.WAITING, tasks: [] },
+        paused: { name: "Paused", status: StatusEnum.PAUSED, tasks: [] },
+        completed: { name: "Completed", status: StatusEnum.COMPLETED, tasks: [] }
     }
     tasks && tasks.forEach((task: TaskType) => {
         switch (task.status) {

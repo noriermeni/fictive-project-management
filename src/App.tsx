@@ -15,12 +15,15 @@ import './utils/language/i18n';
 import {getLocalData} from "./services/localstorage/localstorage";
 import {setLanguage, setTheme} from "./store/slice/settings.slice";
 import Header from "./components/layout/Header/header.component";
+import {clearSelectedUsers} from "./store/slice/project.slice";
+import UsersPanel from "./components/Dialogs/UsersPanel/usersPanel.component";
 
 function Main() {
-    const { i18n } = useTranslation();
+    const {i18n} = useTranslation();
     const dispatch = useDispatch();
-    const { theme, language } = useSelector(state => (state as any).settings);
-    const [ updateTheme, setUpdateTheme ] = useState<ThemeEnum>(ThemeEnum.GREEN);
+    const [updateTheme, setUpdateTheme] = useState<ThemeEnum>(ThemeEnum.GREEN);
+    const {theme, language} = useSelector(state => (state as any).settings);
+    const {employeesPanel} = useSelector(state => (state as any).project);
 
     useEffect(() => {
         getLocalData('theme').then(res => {
@@ -33,29 +36,29 @@ function Main() {
 
     useEffect(() => {
         i18n.changeLanguage(language);
-    }, [language])
-
-    useEffect(() => {
-        setUpdateTheme(theme)
-    }, [theme])
+        setUpdateTheme(theme);
+    }, [language, theme])
 
     return (
         <ThemeProvider theme={findTheme(updateTheme)}>
             <BrowserRouter>
-                <Header />
-                <Routes />
-                <Outlet />
+                <Header/>
+                <Routes/>
+                <Outlet/>
+                <UsersPanel
+                    isOpen={employeesPanel}
+                    dismissPanel={() => dispatch(clearSelectedUsers())}/>
             </BrowserRouter>
         </ThemeProvider>
     );
 }
 
 function App() {
-  return (
-      <Provider store={store}>
-          <Main />
-      </Provider>
-  );
+    return (
+        <Provider store={store}>
+            <Main/>
+        </Provider>
+    );
 }
 
 export default App;

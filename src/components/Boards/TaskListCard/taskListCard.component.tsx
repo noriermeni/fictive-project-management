@@ -1,32 +1,32 @@
 import React from "react";
-import {getTaskListCardClassNames} from "./tasktListCard.style";
 import {useTheme} from "@fluentui/react";
+import {getTaskListCardClassNames} from "./tasktListCard.style";
 import Title from "../../Title/title.component";
 import TaskLineField from "../TaskLineField/taskLineField.component";
 import {TaskType} from "../../../types/Task/task.type";
+import {StatusDetailsType} from "../../../types/StatusDetailsType/statusDetails.type";
+import StatusWrapper from "../../StatusWrapper/statusWrapper.component";
 
-interface Props {
-    status_name: string;
-    tasks: Array<TaskType>;
-}
-
-export default function TaskListCard({tasks, status_name}: Props) {
+export default function TaskListCard({name, status, tasks}: StatusDetailsType) {
 
     const {palette} = useTheme();
-    const {container} = getTaskListCardClassNames(palette);
+    const {container, messageBox} = getTaskListCardClassNames(palette);
 
     const tasksList = (tasks: Array<TaskType>) => {
+        console.log(tasks)
         return (
             <div>
-                {tasks.length > 0 && tasks.map(task => <TaskLineField {...task} />)}
+                {tasks.map(task => <TaskLineField {...task} />)}
             </div>
         )
     }
 
     return (
-        <div className={container}>
-            <Title text={status_name} />
-            {tasksList(tasks)}
-        </div>
+        <StatusWrapper name={name} status={status}>
+            {tasks.length > 0 && tasksList(tasks)}
+            {tasks.length <= 0 && <div className={messageBox}>
+                <Title size={"sm"} text={`${name} status has no declared tasks!`} />
+            </div>}
+        </StatusWrapper>
     );
 }

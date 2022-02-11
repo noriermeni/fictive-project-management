@@ -79,7 +79,7 @@ export default function ProjectCard(props: ProjectType) {
                 [titleContainer]: true,
                 [extendTitleContainer]: isChildrenOrExtend()
             })}>
-                <Link to={`project/${id}`}>
+                <Link to={`project/${id}/list`}>
                     <Title size={'md'} text={name}/>
                 </Link>
                 {childrenProjects.length > 0 &&

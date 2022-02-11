@@ -1,10 +1,11 @@
 import React from "react";
-import {Icon, useTheme} from "@fluentui/react";
+import {Icon, PersonaSize, useTheme} from "@fluentui/react";
 import {getProjectHeaderClassNames} from "./projectHeader.style";
 import Title from "../Title/title.component";
 import UsersList from "../UsersList/usersList.component";
-import Box from "../layout/Box/box.component";
 import {UserType} from "../../types/User/user.type";
+import {Link, useNavigate, useParams} from "react-router-dom";
+import classNames from "classnames";
 
 interface Props {
     title: string;
@@ -13,26 +14,48 @@ interface Props {
 
 const ProjectHeader = (props: Props) => {
     const {title, employees} = props;
+    const {id} = useParams();
+    const navigate = useNavigate();
     const {palette} = useTheme();
-    const {container, projectName, boardSettings, iconSettings} = getProjectHeaderClassNames(palette);
+    const {container, projectName, boardSettings, iconSettings, marginInline} = getProjectHeaderClassNames(palette);
 
     return (
-        <Box className={container}>
-            <Title className={projectName} size={'lg'} text={title}/>
+        <div className={container}>
             <div className={boardSettings}>
-                <UsersList label={`Assignees`}
-                           employees={employees}
-                           maxEmployeesDisplayable={3}/>
-                <div className={boardSettings}>
-                    <Icon onClick={() => console.log('board')}
-                          className={iconSettings}
-                          iconName={'TripleColumn'}/>
-                    <Icon onClick={() => console.log('line')}
-                          className={iconSettings}
-                          iconName={'GroupedList'}/>
+                <Icon className={iconSettings}
+                      iconName={'DietPlanNotebook'}/>
+                <Title className={projectName} size={'xl'} text={title}/>
+                <Icon className={classNames({
+                    [marginInline]: true,
+                    [iconSettings]: true
+                })} iconName={'Library'}
+                    title={"Attachments"} />
+                <Icon className={classNames({
+                    [marginInline]: true,
+                    [iconSettings]: true
+                })} iconName={'Boards'}
+                      title={"Notes"} />
+                <div className={marginInline}>
+                    <UsersList employees={employees}
+                               circleSize={PersonaSize.size8}
+                               maxEmployeesDisplayable={3}/>
                 </div>
             </div>
-        </Box>
+            <div className={boardSettings}>
+                <Link to={`board`}>
+                    <Icon className={classNames({
+                        [marginInline]: true,
+                        [iconSettings]: true
+                    })} iconName={'TripleColumn'}/>
+                </Link>
+                <Link to={`list`}>
+                    <Icon className={classNames({
+                        [marginInline]: true,
+                        [iconSettings]: true
+                    })} iconName={'GroupedList'}/>
+                </Link>
+            </div>
+        </div>
     )
 }
 
