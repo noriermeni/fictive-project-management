@@ -17,6 +17,7 @@ import {formatDate} from "../../utils/dateFormatter";
 interface Props extends ProjectType {
     headerContainerRef: RefObject<HTMLDivElement>;
     headerHeight?: number;
+    handleCollapsedHeader(value: boolean): void;
 }
 
 const ProjectHeader = (props: Props) => {
@@ -78,7 +79,10 @@ const ProjectHeader = (props: Props) => {
                 percentComplete={calculatePercentageOfProgress(props.evaluation)}/>
             <Wrapper className={innerContainer}>
                 <div className={collapseIconContainer}>
-                    <IconButton onClick={() => setCollapseHeader(!collapseHeader)} className={classNames({
+                    <IconButton onClick={() => {
+                        props.handleCollapsedHeader(!collapseHeader)
+                        setCollapseHeader(!collapseHeader)
+                    }} className={classNames({
                         [collapseIcon]: true,
                         [rotateCollapseIcon]: collapseHeader
                     })} icon={'ChevronDownMed'} />
