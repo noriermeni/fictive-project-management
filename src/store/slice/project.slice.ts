@@ -6,7 +6,8 @@ const projectSlice = createSlice({
         selectedUsersList: [],
         employeesPanel: false,
         selectedProjectTasks: [],
-        selectedProjectChildrens: []
+        selectedProjectChildrens: [],
+        projectPathname: ""
     },
     reducers: {
         setSelectedUsers(state, action) {
@@ -20,6 +21,9 @@ const projectSlice = createSlice({
         setSelectedProjectTasks(state, action) {
             if(action.payload.children) state.selectedProjectChildrens = action.payload.children;
             state.selectedProjectTasks = action.payload.tasks;
+        },
+        setProjectPathname(state, action) {
+            state.projectPathname = action.payload;
         }
     },
 })
@@ -27,7 +31,8 @@ const projectSlice = createSlice({
 export const {
     setSelectedUsers,
     clearSelectedUsers,
-    setSelectedProjectTasks
+    setSelectedProjectTasks,
+    setProjectPathname
 } = projectSlice.actions;
 
 export default projectSlice.reducer;

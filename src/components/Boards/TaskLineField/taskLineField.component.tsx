@@ -10,9 +10,10 @@ import {TaskType} from "../../../types/Task/task.type";
 import classNames from "classnames";
 import UsersList from "../../UsersList/usersList.component";
 import {UserType} from "../../../types/User/user.type";
+import {useSelector} from "react-redux";
 
 export default function TaskLineField(props: TaskType) {
-
+    const {projectPathname} = useSelector(state => (state as any).project);
     const {
         id,
         title,
@@ -28,11 +29,13 @@ export default function TaskLineField(props: TaskType) {
     const {palette} = useTheme();
     const {
         container,
+        containerColumn,
         row,
         paddingInline,
         iconSettings,
         columnSize,
-        customUserItemContainer
+        customUserItemContainer,
+        titleWrap
     } = getTaskLineFieldClassNames(palette);
 
     const checkIfEmployeeIsAssignee = () => {
@@ -42,10 +45,16 @@ export default function TaskLineField(props: TaskType) {
     }
 
     return (
-        <div className={container}>
+        <div className={classNames(({
+            [container]: true,
+            [containerColumn]: projectPathname !== "list"
+        }))}>
             <div className={row}>
                 <StatusCircle status={status}/>
-                <Title className={paddingInline} size={'sm'} text={title ? title : `Title not found!`}/>
+                <Title className={classNames(({
+                    [paddingInline]: true,
+                    [titleWrap]: projectPathname !== "list"
+                }))} size={'sm'} text={title ? title : `Title not found!`}/>
             </div>
             <div className={row}>
                 <Icon className={classNames({

@@ -1,16 +1,11 @@
-import React, {useEffect} from "react";
-import {useSelector} from "react-redux";
-import ProjectHeader from "../../ProjectHeader/projectHeader.component";
+import React from "react";
+import TaskListCard from "../TaskListCard/taskListCard.component";
+import BoardWrapper from "../BoardWrapper/boardWrapper.component";
+import {StatusDetailsType} from "../../../types/StatusDetailsType/statusDetails.type";
 
 export default function TasksBoard() {
-    const {selectedProjectTasks} = useSelector(state => (state as any).project);
 
-    useEffect(() => {
-        console.log(selectedProjectTasks)
-    }, [selectedProjectTasks])
-    return (
+    const statusCard = (status: StatusDetailsType) => <TaskListCard {...status} />;
 
-        <>
-            board</>
-    );
+    return <BoardWrapper cardElement={statusCard} />;
 }

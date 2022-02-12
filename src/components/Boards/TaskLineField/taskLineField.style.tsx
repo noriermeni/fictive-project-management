@@ -2,17 +2,19 @@ import {focusFirstChild, IPalette, mergeStyleSets} from "@fluentui/react";
 
 interface TaskLineFieldClassNames {
     container: string;
+    containerColumn: string;
     row: string;
     paddingInline: string;
     iconSettings: string;
     columnSize: string;
     customUserItemContainer: string;
+    titleWrap: string;
 }
 
 export const getTaskLineFieldClassNames = (palette: IPalette): TaskLineFieldClassNames => {
     return mergeStyleSets({
         container: {
-                display: "flex",
+            display: "flex",
             justifyContent: "space-between",
             backgroundColor: palette.neutralLighter,
             minHeight: 32,
@@ -22,6 +24,9 @@ export const getTaskLineFieldClassNames = (palette: IPalette): TaskLineFieldClas
                 flexDirection: "column",
                 maxWidth: "100%",
             }
+        },
+        containerColumn: {
+            flexDirection: "column",
         },
         row: {
             display: "flex",
@@ -49,6 +54,9 @@ export const getTaskLineFieldClassNames = (palette: IPalette): TaskLineFieldClas
         },
         customUserItemContainer: {
             paddingBlock: 0
+        },
+        titleWrap: {
+            maxWidth: 250
         }
     });
 };

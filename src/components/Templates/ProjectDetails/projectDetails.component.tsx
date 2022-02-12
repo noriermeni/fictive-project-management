@@ -7,7 +7,7 @@ import ProjectHeader from "../../ProjectHeader/projectHeader.component";
 import {ProjectType} from "../../../types/Project/project.type";
 
 const ProjectDetails = (props: ProjectType) => {
-    const [ collapseHeader, setCollapseHeader ] = useState<boolean>(false);
+    const [collapseHeader, setCollapseHeader] = useState<boolean>(false);
     const headerContainerRef = useRef<HTMLDivElement>(null);
     const {elementHeight} = useElementResize(headerContainerRef);
 
@@ -21,7 +21,9 @@ const ProjectDetails = (props: ProjectType) => {
     return (
         <Wrapper className={styles.container}>
             <Outlet/>
-            <ProjectHeader handleCollapsedHeader={(value: boolean) => setCollapseHeader(value)} {...props} headerContainerRef={headerContainerRef} headerHeight={elementHeight}/>
+            <ProjectHeader {...props}
+                           handleCollapsedHeader={(value: boolean) => setCollapseHeader(value)}
+                           headerContainerRef={headerContainerRef} headerHeight={elementHeight}/>
         </Wrapper>
     )
 }

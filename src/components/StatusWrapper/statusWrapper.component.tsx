@@ -6,12 +6,13 @@ import classNames from "classnames";
 import {StatusEnum} from "../../enums/Status/status.enum";
 
 interface Props {
-    children: React.ReactNode;
     name: string;
+    className?: string;
     status: StatusEnum;
+    children: React.ReactNode;
 }
 
-export default function StatusWrapper({children, name, status}: Props) {
+export default function StatusWrapper({children, name, status, className = ""}: Props) {
     const {palette} = useTheme();
 
     const {
@@ -25,7 +26,10 @@ export default function StatusWrapper({children, name, status}: Props) {
     } = getStatusWrapperClassNames(palette);
 
     return (
-        <div className={container}>
+        <div className={classNames(({
+            [container]: true,
+            [className]: className
+        }))}>
             <div className={classNames({
                 [headerStatus]: true,
                 [paused]: status === StatusEnum.PAUSED,

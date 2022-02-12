@@ -8,9 +8,10 @@ interface Props {
     children: React.ReactNode;
     title?: string;
     className?: string;
+    boxListClassName?: string
 }
 
-export default function SettingsFieldWrapper({children, title, className = ""}: Props) {
+export default function SettingsFieldWrapper({children, title, className = "", boxListClassName = ""}: Props) {
     const {palette} = useTheme();
     let {container, boxList} = getSettingsFieldWrapperClassNames(palette);
 
@@ -20,7 +21,10 @@ export default function SettingsFieldWrapper({children, title, className = ""}: 
             [className]: className
         })}>
             {title && <Title size={'sm'} text={title}/>}
-            <div className={boxList}>
+            <div className={classNames(({
+                [boxList]: true,
+                [boxListClassName]: boxListClassName
+            }))}>
                 {children}
             </div>
         </div>

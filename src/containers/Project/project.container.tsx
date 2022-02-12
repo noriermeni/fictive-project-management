@@ -14,7 +14,6 @@ const Project = () => {
     const {data, loading}: FetchDataType<ProjectType> = useData(`project/${id}`);
 
     useEffect(() => {
-        console.log(`data `, data)
         //@ts-ignore
         data?.tasks && dispatch(setSelectedProjectTasks({tasks: data?.tasks, children: data?.childrenProjects
     }));

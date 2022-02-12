@@ -11,6 +11,7 @@ import UsersList from "../UsersList/usersList.component";
 import Title from "../Title/title.component";
 import {StatusEnum} from "../../enums/Status/status.enum";
 import {ProjectType} from "../../types/Project/project.type";
+import {findProjectStatus} from "../../utils/manipulateTasksByStatus";
 
 export default function ProjectCard(props: ProjectType) {
 
@@ -107,7 +108,7 @@ export default function ProjectCard(props: ProjectType) {
              })}>
             {isComponentVisible && !isChildren && <div className={minimizeWrapper}>
                 <Title size={'lg'}
-                       text={"ON GOING"}/>
+                       text={findProjectStatus(status)}/>
                 <Icon onClick={() => setExtendBox(!extendBox)}
                       className={minimizeIcon}
                       iconName={'ChromeMinimize'}/>

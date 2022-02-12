@@ -1,21 +1,11 @@
-import React, {useEffect, useState} from "react";
-import {useSelector} from "react-redux";
-import {manipulateTasksByStatus} from "../../../utils/manipulateTasksByStatus";
+import React from "react";
+import BoardWrapper from "../BoardWrapper/boardWrapper.component";
 import TaskListCard from "../TaskListCard/taskListCard.component";
 import {StatusDetailsType} from "../../../types/StatusDetailsType/statusDetails.type";
 
 export default function TaskList() {
-    const [statusList, setStatusList] = useState<Array<StatusDetailsType>>([]);
-    const {selectedProjectTasks} = useSelector(state => (state as any).project);
 
-    useEffect(() => {
-        const givenStatusList = [...Object.values(manipulateTasksByStatus(selectedProjectTasks))];
-        setStatusList(givenStatusList);
-    }, [selectedProjectTasks])
+    const statusCard = (status: StatusDetailsType) => <TaskListCard {...status} />;
 
-    return (
-        <div>
-            {statusList && statusList.map((status: StatusDetailsType) => <TaskListCard {...status} />)}
-        </div>
-    );
+    return <BoardWrapper cardElement={statusCard} />;
 }

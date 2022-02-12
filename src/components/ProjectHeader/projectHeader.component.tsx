@@ -13,15 +13,18 @@ import InformationBox from "../InformationBox/informationBox.component";
 import {DirectionalHint} from "@fluentui/react/lib/Callout";
 import {calculatePercentageOfProgress} from "../../utils/calculation";
 import {formatDate} from "../../utils/dateFormatter";
+import {useNavigate} from "react-router-dom";
 
 interface Props extends ProjectType {
     headerContainerRef: RefObject<HTMLDivElement>;
     headerHeight?: number;
+
     handleCollapsedHeader(value: boolean): void;
 }
 
 const ProjectHeader = (props: Props) => {
-    const [ collapseHeader, setCollapseHeader ] = useState<boolean>(false);
+    const navigate = useNavigate();
+    const [collapseHeader, setCollapseHeader] = useState<boolean>(false);
     const {
         headerContainerRef,
         name,
@@ -85,7 +88,7 @@ const ProjectHeader = (props: Props) => {
                     }} className={classNames({
                         [collapseIcon]: true,
                         [rotateCollapseIcon]: collapseHeader
-                    })} icon={'ChevronDownMed'} />
+                    })} icon={'ChevronDownMed'}/>
                 </div>
                 <div className={boardSettings}>
                     {informationPanel()}
@@ -93,6 +96,14 @@ const ProjectHeader = (props: Props) => {
                         <Title className={projectName} size={'xl'} text={name}/>
                         <Title className={projectName} text={description}/>
                     </div>
+                </div>
+                <div className={marginInline}>
+                    <IconButton onClick={() => navigate(-1)}
+                                title={"Navigate back to the Go back to the list of projects!"}
+                                className={classNames({
+                                    [iconSettings]: true,
+                                    [rotateCollapseIcon]: collapseHeader
+                                })} icon={'NavigateBack'}/>
                 </div>
                 <div className={boardSettings}>
                     <SettingsFieldWrapper className={marginInline} title={`Files`}>

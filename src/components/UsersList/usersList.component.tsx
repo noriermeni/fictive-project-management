@@ -15,6 +15,7 @@ interface Props {
     showUnknownPersonaCoin?: boolean;
     className?: string;
     circleSize?: PersonaSize;
+    boxListClassName?: string;
 }
 
 export default function UsersList(props: Props) {
@@ -26,12 +27,13 @@ export default function UsersList(props: Props) {
         circleSize = PersonaSize.size32,
         showDetails = false,
         hidePersonaDetails = false,
-        showUnknownPersonaCoin = false
+        showUnknownPersonaCoin = false,
+        boxListClassName = ""
     } = props;
     const dispatch = useDispatch();
 
     return (
-        <SettingsFieldWrapper title={label} className={className}>
+        <SettingsFieldWrapper title={label} className={className} boxListClassName={boxListClassName}>
             {!showDetails && <CustomFacepile employees={employees} maxEmployeesDisplayable={maxEmployeesDisplayable}
                                              handleClick={() => dispatch(setSelectedUsers(employees))}/>}
             {showDetails && employees.map(employee => <Persona

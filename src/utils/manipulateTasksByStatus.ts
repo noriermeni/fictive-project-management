@@ -23,3 +23,16 @@ export const manipulateTasksByStatus = (tasks: Array<TaskType>) => {
     })
     return currentStatusList;
 }
+
+export const findProjectStatus = (status: StatusEnum) => {
+    switch (status) {
+        case StatusEnum.COMPLETED:
+            return "Completed";
+        case StatusEnum.IN_PROGRESS:
+            return "On going";
+        case StatusEnum.PAUSED:
+            return "Paused";
+        case StatusEnum.WAITING:
+            return "On hold";
+    }
+}
