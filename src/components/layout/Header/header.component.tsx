@@ -24,7 +24,7 @@ export default function Header() {
     return (
         <Box className={outerContainer}>
             <Wrapper className={innerContainer}>
-                <Logo/>
+                <Logo navigateTo={'/'} />
                 <div className={rightSide}>
                     <Icon onClick={openPanel} className={icon} iconName={'WaffleOffice365'}/>
                     {user && <Persona hidePersonaDetails text={`${user.first_name} ${user.last_name}`}

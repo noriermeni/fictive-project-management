@@ -3,10 +3,16 @@ import {externalStyles} from "./logo.style";
 import {mergeStyleSets, useTheme} from "@fluentui/react";
 import {useTranslation} from "react-i18next";
 import Title from "../Title/title.component";
+import {useNavigate} from "react-router-dom";
 
-export function Logo() {
+interface Props {
+    navigateTo?: string;
+}
+
+export function Logo({navigateTo}: Props) {
     const {palette} = useTheme();
     const {t} = useTranslation();
+    const navigate = useNavigate();
 
     const styles = mergeStyleSets({
         svgIcon: {
@@ -19,7 +25,7 @@ export function Logo() {
     })
 
     return (
-        <div className={externalStyles.container}>
+        <div onClick={() => navigateTo && navigate(navigateTo)} className={externalStyles.container}>
             <svg className={styles.svgIcon} version="1.1" xmlns="http://www.w3.org/2000/svg"
                  xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
                  enableBackground="new 0 0 1000 1000" xmlSpace="preserve" width="40px" height="40px">
