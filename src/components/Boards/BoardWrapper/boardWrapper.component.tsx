@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import _ from "lodash";
 import {useDispatch, useSelector} from "react-redux";
 import {useLocation} from "react-router-dom";
 import {manipulateTasksByStatus} from "../../../utils/manipulateTasksByStatus";
@@ -8,7 +9,7 @@ import {getLastKeyFromPathname} from "../../../utils/splitPathname";
 import {setProjectPathname} from "../../../store/slice/project.slice";
 
 interface Props {
-    cardElement(status: StatusDetailsType): void;
+    cardElement(status: StatusDetailsType, idx: number): void;
 }
 
 export default function BoardWrapper({cardElement}: Props) {
@@ -32,7 +33,7 @@ export default function BoardWrapper({cardElement}: Props) {
 
     return (
         <div className={styles.boardWrapper}>
-            {statusList && statusList.map((status: StatusDetailsType) => cardElement({...status}))}
+            {statusList && _.map(statusList, (status: StatusDetailsType, idx: number) => cardElement({...status}, idx))}
         </div>
     );
 }

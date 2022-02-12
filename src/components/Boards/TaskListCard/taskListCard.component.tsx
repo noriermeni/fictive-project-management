@@ -1,4 +1,5 @@
 import React from "react";
+import _ from "lodash";
 import {useTheme} from "@fluentui/react";
 import {getTaskListCardClassNames} from "./tasktListCard.style";
 import Title from "../../Title/title.component";
@@ -9,17 +10,17 @@ import {StatusDetailsType} from "../../../types/StatusDetailsType/statusDetails.
 import {useSelector} from "react-redux";
 import classNames from "classnames";
 
-export default function TaskListCard({name, status, tasks}: StatusDetailsType) {
+export default function TaskListCard({name, status, tasks, key}: StatusDetailsType) {
     const {projectPathname} = useSelector(state => (state as any).project);
     const {palette} = useTheme();
     const {wrapperContainer, messageBox} = getTaskListCardClassNames(palette);
 
-    const tasksList = (tasks: Array<TaskType>) => tasks.map(task => <TaskLineField {...task} />);
+    const tasksList = (tasks: Array<TaskType>) => _.map(tasks, task => <TaskLineField {...task} />);
 
     return (
         <StatusWrapper className={classNames({
             [wrapperContainer]: projectPathname !== "list"
-        })} name={name} status={status}>
+        })} name={name} status={status} key={`${status}_${key}`}>
             {tasks.length > 0 && tasksList(tasks)}
             {tasks.length <= 0 && <div className={messageBox}>
                 <Title size={"sm"} text={`${name} status has no declared tasks!`} />

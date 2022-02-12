@@ -73,7 +73,7 @@ export const getProjectHeaderClassNames = ({palette, headerHeight, collapseHeade
             alignItems: "center",
             position: "absolute",
             right: 10,
-            top: collapseHeader ? -40 : -25,
+            top: -40,
             borderRadius: "50%",
             width: 25,
             height: 25,

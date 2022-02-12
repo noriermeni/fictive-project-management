@@ -5,4 +5,5 @@ export interface StatusDetailsType {
     name: string;
     status: StatusEnum;
     tasks: Array<TaskType>;
+    key?: number;
 }

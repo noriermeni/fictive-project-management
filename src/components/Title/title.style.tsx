@@ -14,6 +14,7 @@ export const getTitleClassNames = (palette: IPalette): HeaderClassNames => {
         textStyle: {
             color: palette.tealDark,
             paddingBottom: 5,
+            // whi
         },
         xSmall: {
             fontSize: '12px',

@@ -1,20 +1,22 @@
 import React, {useState} from "react";
+import _ from "lodash";
 import {Link} from "react-router-dom";
 import {useSelector} from "react-redux";
 import classNames from "classnames";
-import {getProjectCardClassNames} from "./projectCard.style";
 import {Icon, ProgressIndicator, useTheme} from "@fluentui/react";
+import {getProjectCardClassNames} from "./projectCard.style";
 import useComponentVisibleHook from "../../hook/useComponentVisible.hook";
 import {calculatePercentageOfProgress} from "../../utils/calculation";
+import {findProjectStatus} from "../../utils/manipulateTasksByStatus";
 import DateField from "../DateField/dateField.component";
 import UsersList from "../UsersList/usersList.component";
 import Title from "../Title/title.component";
 import {StatusEnum} from "../../enums/Status/status.enum";
 import {ProjectType} from "../../types/Project/project.type";
-import {findProjectStatus} from "../../utils/manipulateTasksByStatus";
 
 export default function ProjectCard(props: ProjectType) {
 
+    const {palette} = useTheme();
     const {
         id,
         name,
@@ -26,8 +28,6 @@ export default function ProjectCard(props: ProjectType) {
         childrenProjects,
         isChildren = false
     } = props;
-
-    const {palette} = useTheme();
     const {
         container,
         extend,
@@ -55,7 +55,7 @@ export default function ProjectCard(props: ProjectType) {
 
     const recursiveProjectCard = (childrenProjects: Array<ProjectType>) => {
         return (
-            childrenProjects && childrenProjects.map((project: ProjectType, idx: number) => {
+            childrenProjects && _.map(childrenProjects, (project: ProjectType, idx: number) => {
                 return (
                     <div key={`${project.id}_${idx}`}>
                         <ProjectCard {...project} isChildren/>

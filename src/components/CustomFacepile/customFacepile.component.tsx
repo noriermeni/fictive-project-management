@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import _ from "lodash";
 import {Facepile, OverflowButtonType} from "@fluentui/react";
 import {UserType} from "../../types/User/user.type";
 
@@ -15,7 +16,7 @@ export default function CustomFacepile(props: Props) {
 
     useEffect(() => {
         let currentEmployeesFacepileDetails: Array<{ personaName: string }> = [...employeesFacepileDetails];
-        employees && employees.map((employee: UserType) => currentEmployeesFacepileDetails.push({personaName: `${employee.first_name} ${employee.last_name}`}));
+        employees && _.forEach(employees, (employee: UserType) => currentEmployeesFacepileDetails.push({personaName: `${employee.first_name} ${employee.last_name}`}));
         setEmployeesFacepileDetails(currentEmployeesFacepileDetails);
     }, [])
 
@@ -25,7 +26,7 @@ export default function CustomFacepile(props: Props) {
             showTooltip
             maxDisplayablePersonas={maxEmployeesDisplayable}
             overflowButtonType={OverflowButtonType.descriptive}
-            overflowButtonProps={{ onClick: () => handleClick && handleClick() }}
+            overflowButtonProps={{onClick: () => handleClick && handleClick()}}
         />
     );
 }

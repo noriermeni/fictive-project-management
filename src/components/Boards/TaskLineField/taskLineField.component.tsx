@@ -60,15 +60,14 @@ export default function TaskLineField(props: TaskType) {
                 <Icon className={classNames({
                     [paddingInline]: true,
                     [iconSettings]: true
-                })} iconName={'TripleColumn'}/>
+                })} iconName={'Library'}/>
                 <Icon className={classNames({
                     [paddingInline]: true,
                     [iconSettings]: true
-                })} iconName={'GroupedList'}/>
+                })} iconName={'Boards'}/>
                 {estimation_date && <Title className={paddingInline} size={"sm"} text={formatDate(estimation_date)}/>}
                 <div className={columnSize}>
-                    {/*{!assignee && <Title size={"sm"} text={`Not Assigned`}/>}*/}
-                    {assignee && <UsersList showUnknownPersonaCoin={assignee ? false : true} showDetails
+                    {assignee && <UsersList showUnknownPersonaCoin={!assignee} showDetails
                                             className={customUserItemContainer}
                                             employees={checkIfEmployeeIsAssignee()} hidePersonaDetails/>}
                 </div>

@@ -1,10 +1,8 @@
 import React from "react";
+import _ from "lodash";
 import {useTheme} from "@fluentui/react";
 import {getProjectListClassNames} from "./projectList.style";
-import {useSelector} from "react-redux";
-import {clearSelectedUsers} from "../../store/slice/project.slice";
 import ProjectCard from "../ProjectCard/projectCard.component";
-import UsersPanel from "../Dialogs/UsersPanel/usersPanel.component";
 import {ProjectType} from "../../types/Project/project.type";
 
 interface Props {
@@ -15,7 +13,7 @@ export default function ProjectList({data}: Props) {
     const {palette} = useTheme();
     const {container} = getProjectListClassNames(palette);
 
-    const mappingProjects = () => data.map((project: ProjectType) => <React.Fragment key={project.id}>
+    const mappingProjects = () => _.map(data, (project: ProjectType, idx: number) => <React.Fragment key={`${project.id}_${idx}`}>
         <ProjectCard {...project} />
     </React.Fragment>)
 

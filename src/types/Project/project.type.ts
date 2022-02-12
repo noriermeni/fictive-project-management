@@ -10,7 +10,7 @@ export interface ProjectType {
     parent_id: string;
     name: string;
     description: string;
-    created_by: string;
+    created_by?: string | UserType;
     created_at: Date;
     finish_date: Date;
     evaluation: number;

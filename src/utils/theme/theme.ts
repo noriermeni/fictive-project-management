@@ -4,6 +4,7 @@ import {GreenTheme} from "./types/greenTheme";
 import {BlueTheme} from "./types/blueTheme";
 import {PurpleTheme} from "./types/purpleTheme";
 import {RedTheme} from "./types/redTheme";
+import {ColorType} from "../../types/Colors/color.type";
 
 export const findTheme = (theme: ThemeEnum) => {
     switch (theme) {
@@ -20,7 +21,7 @@ export const findTheme = (theme: ThemeEnum) => {
     }
 }
 
-export const themes = [
+export const themes: Array<ColorType> = [
     { color: "#aaddaa", type: ThemeEnum.GREEN, id: 1, isActive: true },
     { color: "#0083e8", type: ThemeEnum.BLUE, id: 2, isActive: false },
     { color: "#a558fc", type: ThemeEnum.PURPLE, id: 3, isActive: false },

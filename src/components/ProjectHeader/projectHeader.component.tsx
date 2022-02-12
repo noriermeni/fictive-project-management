@@ -1,4 +1,5 @@
-import React, {RefObject, useState} from "react";
+import React, {RefObject, useEffect, useState} from "react";
+import _ from "lodash";
 import classNames from "classnames";
 import {Icon, PersonaSize, ProgressIndicator, useTheme} from "@fluentui/react";
 import {getProjectHeaderClassNames} from "./projectHeader.style";
@@ -14,6 +15,7 @@ import {DirectionalHint} from "@fluentui/react/lib/Callout";
 import {calculatePercentageOfProgress} from "../../utils/calculation";
 import {formatDate} from "../../utils/dateFormatter";
 import {useNavigate} from "react-router-dom";
+import CustomPanelWrapper from "../CustomPanelWrapper/customPanelWrapper.component";
 
 interface Props extends ProjectType {
     headerContainerRef: RefObject<HTMLDivElement>;
@@ -25,6 +27,8 @@ interface Props extends ProjectType {
 const ProjectHeader = (props: Props) => {
     const navigate = useNavigate();
     const [collapseHeader, setCollapseHeader] = useState<boolean>(false);
+    const [showNotesPanel, setShowNotesPanel] = useState<boolean>(false);
+    const [showAttachmentsPanel, setShowAttachmentsPanel] = useState<boolean>(false);
     const {
         headerContainerRef,
         name,
@@ -33,7 +37,9 @@ const ProjectHeader = (props: Props) => {
         created_by,
         created_at,
         finish_date,
-        headerHeight
+        headerHeight,
+        notes,
+        attachment
     } = props;
     const {palette} = useTheme();
     const {
@@ -51,20 +57,21 @@ const ProjectHeader = (props: Props) => {
         collapsedContainer
     } = getProjectHeaderClassNames({palette, headerHeight, collapseHeader});
 
-
     const informationPanel = () => {
         return (
-            <InformationBox title={name} className={iconSettings} directionalHint={DirectionalHint.topAutoEdge}>
+            <InformationBox title={name ? name : ""} className={iconSettings}
+                            directionalHint={DirectionalHint.topAutoEdge}>
                 <Title className={informationColor} text={description}/>
                 <div>
                     <SettingsFieldWrapper className={informationColor} title={`Due date`}>
-                        <Title size={'sm'} text={formatDate(finish_date)}/>
+                        <Title size={'sm'} text={_.isNil(finish_date) ? '-' : formatDate(finish_date)}/>
                     </SettingsFieldWrapper>
                     <SettingsFieldWrapper className={informationColor} title={`Created at`}>
-                        <Title size={'sm'} text={formatDate(created_at)}/>
+                        <Title size={'sm'} text={_.isNil(created_at) ? '-' : formatDate(created_at)}/>
                     </SettingsFieldWrapper>
                     <SettingsFieldWrapper className={informationColor} title={`Created by`}>
-                        <Title size={'sm'} text={created_by}/>
+                        <Title size={'sm'}
+                               text={_.isString(created_by) ? created_by : `${created_by?.first_name} ${created_by?.last_name}`}/>
                     </SettingsFieldWrapper>
                 </div>
             </InformationBox>
@@ -76,6 +83,14 @@ const ProjectHeader = (props: Props) => {
             [container]: true,
             [collapsedContainer]: collapseHeader
         })} ref={headerContainerRef}>
+            <Wrapper>
+                <CustomPanelWrapper minimizeNotesPanel={() => {
+                    setShowNotesPanel(false);
+                    setShowAttachmentsPanel(false);
+                }}  notes={notes}
+                    attachments={attachment} showNotesPanel={showNotesPanel}
+                    showAttachmentsPanel={showAttachmentsPanel}/>
+            </Wrapper>
             <ProgressIndicator
                 styles={{progressBar: {backgroundColor: palette.themeDarker}, itemProgress: {paddingTop: 0}}}
                 title={`Tasks progress ${props.evaluation}%`} barHeight={10}
@@ -98,7 +113,7 @@ const ProjectHeader = (props: Props) => {
                     </div>
                 </div>
                 <div className={marginInline}>
-                    <IconButton onClick={() => navigate(-1)}
+                    <IconButton onClick={() => navigate('/')}
                                 title={"Navigate back to the Go back to the list of projects!"}
                                 className={classNames({
                                     [iconSettings]: true,
@@ -110,12 +125,20 @@ const ProjectHeader = (props: Props) => {
                         <Icon className={classNames({
                             [iconSettings]: true
                         })} iconName={'Library'}
+                              onClick={() => {
+                                  setShowAttachmentsPanel(!showAttachmentsPanel)
+                                  setShowNotesPanel(false);
+                              }}
                               title={"Attachments"}/>
                     </SettingsFieldWrapper>
                     <SettingsFieldWrapper className={marginInline} title={`Notes`}>
                         <IconButton className={classNames({
                             [iconSettings]: true
                         })} icon={'Boards'}
+                                    onClick={() => {
+                                        setShowNotesPanel(!showNotesPanel);
+                                        setShowAttachmentsPanel(false);
+                                    }}
                                     title={"Notes"}/>
                     </SettingsFieldWrapper>
                     <div className={marginInline}>

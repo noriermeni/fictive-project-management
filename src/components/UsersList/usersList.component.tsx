@@ -36,7 +36,8 @@ export default function UsersList(props: Props) {
         <SettingsFieldWrapper title={label} className={className} boxListClassName={boxListClassName}>
             {!showDetails && <CustomFacepile employees={employees} maxEmployeesDisplayable={maxEmployeesDisplayable}
                                              handleClick={() => dispatch(setSelectedUsers(employees))}/>}
-            {showDetails && employees.map(employee => <Persona
+            {showDetails && employees.map((employee: UserType, idx: number) => <Persona
+                key={`${employee.id}_${idx}`}
                 styles={{root: {marginBlock: 5}}}
                 text={`${employee.first_name} ${employee.last_name}`}
                 secondaryText={employee?.position}

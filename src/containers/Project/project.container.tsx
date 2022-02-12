@@ -7,22 +7,32 @@ import ProjectDetails from "../../components/Templates/ProjectDetails/projectDet
 import DataSpinner from "../../components/DataSpinner/dataSpinner.component";
 import {FetchDataType} from "../../types/FetchData/fetchData.type";
 import {ProjectType} from "../../types/Project/project.type";
+import {mergeStyleSets} from "@fluentui/react";
 
 const Project = () => {
     const dispatch = useDispatch();
     const {id} = useParams();
     const {data, loading}: FetchDataType<ProjectType> = useData(`project/${id}`);
 
+    const styles = mergeStyleSets({
+        container: {
+            display: "flex",
+            justifyContent: "center",
+            width: "100%"
+        }
+    });
+
     useEffect(() => {
         //@ts-ignore
-        data?.tasks && dispatch(setSelectedProjectTasks({tasks: data?.tasks, children: data?.childrenProjects
-    }));
+        data?.tasks && dispatch(setSelectedProjectTasks({tasks: data?.tasks, children: data?.childrenProjects}));
     }, [loading])
 
     return (
         <>
             {!loading && data && <ProjectDetails {...data} />}
-            {loading && <DataSpinner label={`Waiting for data...`} />}
+            {loading && <div className={styles.container}>
+                <DataSpinner label={`Waiting for data...`}/>
+            </div>}
         </>
     )
 }
