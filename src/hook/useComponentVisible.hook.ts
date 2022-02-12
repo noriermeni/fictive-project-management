@@ -1,17 +1,17 @@
-import { useState, useEffect, useRef } from 'react';
+import {useState, useEffect, useRef} from 'react';
 
 interface Props {
     extendBox: boolean;
-    employeesPanel: boolean | undefined;
+    employeesPanel?: boolean | undefined;
 }
 
 export default function useComponentVisibleHook({extendBox, employeesPanel}: Props) {
 
     const ref = useRef<HTMLDivElement>(null);
-    const [ isComponentVisible, setIsComponentVisible ] = useState(extendBox);
+    const [isComponentVisible, setIsComponentVisible] = useState(extendBox);
 
     useEffect(() => {
-        if(employeesPanel === false || employeesPanel === undefined) setIsComponentVisible(extendBox);
+        if (employeesPanel === false || employeesPanel === undefined) setIsComponentVisible(extendBox);
         document.addEventListener('click', handleClickOutside, true);
         return () => {
             document.removeEventListener('click', handleClickOutside, true);
@@ -24,5 +24,5 @@ export default function useComponentVisibleHook({extendBox, employeesPanel}: Pro
         }
     };
 
-    return { ref, isComponentVisible, setIsComponentVisible };
+    return {ref, isComponentVisible, setIsComponentVisible};
 }

@@ -2,6 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import {useTheme} from "@fluentui/react";
 import {getCustomPanelCardClassNames} from "./customPanelCard.style";
+import useComponentVisibleHook from "../../hook/useComponentVisible.hook";
 import Title from "../Title/title.component";
 import IconButton from "../IconButton/iconButton.component";
 
@@ -23,15 +24,17 @@ export default function CustomPanelCard({show = false, title, children, minimize
         titleStyle,
         minimizeIcon
     } = getCustomPanelCardClassNames(palette, show);
+    const {ref, isComponentVisible} = useComponentVisibleHook({extendBox: show});
 
     return (
         <div className={classNames({
             [container]: true,
-            [toggleContainer]: show
-        })}>
+            [toggleContainer]: isComponentVisible
+        })} ref={ref}>
             <div className={header}>
                 <Title className={titleStyle} size={'sm'} text={title}/>
-                {minimizePanel && <IconButton onClick={minimizePanel} className={minimizeIcon} icon={'ChromeMinimize'}/>}
+                {minimizePanel &&
+                <IconButton onClick={minimizePanel} className={minimizeIcon} icon={'ChromeMinimize'}/>}
             </div>
             <div className={body}>
                 {children}

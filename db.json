@@ -18,18 +18,18 @@
       "attachment": [
         {
           "id": "attachment_1",
-          "type": "xslx",
-          "url": ""
+          "type": "pdf",
+          "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
         },
         {
           "id": "attachment_2",
-          "type": "zip",
-          "url": ""
+          "type": "xlsx",
+          "url": "http://www.clickdimensions.com/links/TestXLSXfile.xlsx"
         },
         {
           "id": "attachment_3",
           "type": "docx",
-          "url": ""
+          "url": "http://www.clickdimensions.com/links/TestWordFile.docx"
         }
       ],
       "notes": [
@@ -1123,18 +1123,23 @@
       "attachment": [
         {
           "id": "attachment_1",
-          "type": "xslx",
-          "url": ""
+          "type": "pdf",
+          "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
         },
         {
           "id": "attachment_2",
-          "type": "zip",
-          "url": ""
+          "type": "xlsx",
+          "url": "http://www.clickdimensions.com/links/TestXLSXfile.xlsx"
         },
         {
           "id": "attachment_3",
           "type": "docx",
-          "url": ""
+          "url": "http://www.clickdimensions.com/links/TestWordFile.docx"
+        },
+        {
+          "id": "attachment_4",
+          "type": "zip",
+          "url": "http://www.clickdimensions.com/links/TestZIPfile.zip"
         }
       ],
       "notes": [

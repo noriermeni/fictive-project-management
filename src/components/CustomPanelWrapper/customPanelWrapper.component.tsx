@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import {useTheme} from "@fluentui/react";
 import {getCustomPanelWrapperClassNames} from "./customPanelWrapper.style";
 import AttachmentsPanel from "../Dialogs/AttachmentsPanel/attachmentsPanel.component";
@@ -11,16 +11,18 @@ interface Props {
     showAttachmentsPanel: boolean;
     notes: Array<NotesType>;
     attachments: Array<AttachmentType>;
+
     minimizeNotesPanel(): void;
 }
 
-export default function CustomPanelWrapper({showAttachmentsPanel, showNotesPanel, notes, attachments, minimizeNotesPanel}: Props) {
+export default function CustomPanelWrapper(props: Props) {
+    const {showAttachmentsPanel, showNotesPanel, notes, attachments, minimizeNotesPanel} = props;
     const {palette} = useTheme();
     const {container} = getCustomPanelWrapperClassNames(palette);
 
     return (
         <div className={container}>
-            <AttachmentsPanel minimizePanel={minimizeNotesPanel} show={showAttachmentsPanel}/>
+            <AttachmentsPanel attachments={attachments} minimizePanel={minimizeNotesPanel} show={showAttachmentsPanel}/>
             <NotesPanel minimizePanel={minimizeNotesPanel} notes={notes} show={showNotesPanel}/>
         </div>
     );
