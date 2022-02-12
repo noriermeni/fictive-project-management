@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install -g json-server`
+
+**Note: Install globally json-server modules**
+
 ### `npm start`
 
 **Note: You can use npm start command to start application!**
