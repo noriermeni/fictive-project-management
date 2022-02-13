@@ -8,9 +8,10 @@ export const setLocalData = (key: string, data: any) => {
 
 export const getLocalData = async (key: string) => {
     try {
-        const storedData: string | null = await localStorage.getItem(key);
-        return JSON.parse(storedData ? storedData : '');
+        const storedData = await localStorage.getItem(key);
+        return storedData && JSON.parse(storedData);
     } catch (e) {
+        console.log(e)
         throw new Error(`Something went wrong or nothing found in local storage with key: ${key}!`)
     }
 }

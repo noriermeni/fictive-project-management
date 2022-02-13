@@ -1,4 +1,4 @@
-import {focusFirstChild, IPalette, mergeStyleSets} from "@fluentui/react";
+import {IPalette, mergeStyleSets} from "@fluentui/react";
 
 interface TaskLineFieldClassNames {
     container: string;
@@ -50,7 +50,8 @@ export const getTaskLineFieldClassNames = (palette: IPalette): TaskLineFieldClas
             fontSize: 20
         },
         columnSize: {
-            minWidth: 32
+            minWidth: 32,
+            minHeight: 42
         },
         customUserItemContainer: {
             paddingBlock: 0

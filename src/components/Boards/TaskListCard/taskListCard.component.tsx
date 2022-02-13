@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Fragment} from "react";
 import _ from "lodash";
 import {useTheme} from "@fluentui/react";
 import {getTaskListCardClassNames} from "./tasktListCard.style";
@@ -15,7 +15,9 @@ export default function TaskListCard({name, status, tasks, key}: StatusDetailsTy
     const {palette} = useTheme();
     const {wrapperContainer, messageBox} = getTaskListCardClassNames(palette);
 
-    const tasksList = (tasks: Array<TaskType>) => _.map(tasks, task => <TaskLineField {...task} />);
+    const tasksList = (tasks: Array<TaskType>) => _.map(tasks, task => <Fragment key={`${task.id}`}>
+        <TaskLineField {...task} />
+    </Fragment>);
 
     return (
         <StatusWrapper className={classNames({

@@ -1,21 +1,20 @@
-import React, {RefObject, useEffect, useState} from "react";
+import React, {RefObject, useState} from "react";
 import _ from "lodash";
 import classNames from "classnames";
-import {Icon, PersonaSize, ProgressIndicator, useTheme} from "@fluentui/react";
+import {DirectionalHint} from "@fluentui/react/lib/Callout";
+import {Icon, ProgressIndicator, useTheme} from "@fluentui/react";
 import {getProjectHeaderClassNames} from "./projectHeader.style";
+import {formatDate} from "../../utils/dateFormatter";
+import {calculatePercentageOfProgress} from "../../utils/calculation";
 import Title from "../Title/title.component";
 import UsersList from "../UsersList/usersList.component";
 import Wrapper from "../layout/Wrapper/wrapper.component";
-import {ProjectType} from "../../types/Project/project.type";
-import Switcher from "../Boards/Switcher/switcher.component";
-import SettingsFieldWrapper from "../SettingsField/settingsFieldWrapper.component";
 import IconButton from "../IconButton/iconButton.component";
+import Switcher from "../Boards/Switcher/switcher.component";
 import InformationBox from "../InformationBox/informationBox.component";
-import {DirectionalHint} from "@fluentui/react/lib/Callout";
-import {calculatePercentageOfProgress} from "../../utils/calculation";
-import {formatDate} from "../../utils/dateFormatter";
-import {useNavigate} from "react-router-dom";
+import SettingsFieldWrapper from "../SettingsField/settingsFieldWrapper.component";
 import CustomPanelWrapper from "../CustomPanelWrapper/customPanelWrapper.component";
+import {ProjectType} from "../../types/Project/project.type";
 
 interface Props extends ProjectType {
     headerContainerRef: RefObject<HTMLDivElement>;
@@ -25,7 +24,6 @@ interface Props extends ProjectType {
 }
 
 const ProjectHeader = (props: Props) => {
-    const navigate = useNavigate();
     const [collapseHeader, setCollapseHeader] = useState<boolean>(false);
     const [showNotesPanel, setShowNotesPanel] = useState<boolean>(false);
     const [showAttachmentsPanel, setShowAttachmentsPanel] = useState<boolean>(false);
@@ -87,9 +85,9 @@ const ProjectHeader = (props: Props) => {
                 <CustomPanelWrapper minimizeNotesPanel={() => {
                     setShowNotesPanel(false);
                     setShowAttachmentsPanel(false);
-                }}  notes={notes}
-                    attachments={attachment} showNotesPanel={showNotesPanel}
-                    showAttachmentsPanel={showAttachmentsPanel}/>
+                }} notes={notes}
+                                    attachments={attachment} showNotesPanel={showNotesPanel}
+                                    showAttachmentsPanel={showAttachmentsPanel}/>
             </Wrapper>
             <ProgressIndicator
                 styles={{progressBar: {backgroundColor: palette.themeDarker}, itemProgress: {paddingTop: 0}}}
@@ -111,14 +109,6 @@ const ProjectHeader = (props: Props) => {
                         <Title className={projectName} size={'xl'} text={name}/>
                         <Title className={projectName} text={description}/>
                     </div>
-                </div>
-                <div className={marginInline}>
-                    <IconButton onClick={() => navigate('/')}
-                                title={"Navigate back to the Go back to the list of projects!"}
-                                className={classNames({
-                                    [iconSettings]: true,
-                                    [rotateCollapseIcon]: collapseHeader
-                                })} icon={'NavigateBack'}/>
                 </div>
                 <div className={boardSettings}>
                     <SettingsFieldWrapper className={marginInline} title={`Files`}>
@@ -144,7 +134,6 @@ const ProjectHeader = (props: Props) => {
                     <div className={marginInline}>
                         <UsersList label={`Assignees`}
                                    employees={employees}
-                                   circleSize={PersonaSize.size8}
                                    maxEmployeesDisplayable={2}/>
                     </div>
                     <Switcher className={marginInline}/>

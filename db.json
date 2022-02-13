@@ -85,7 +85,56 @@
             "position": "Funny men"
           },
           "reporter": "",
-          "comments": []
+          "comments": [],
+          "attachment": [
+            {
+              "id": "attachment_1",
+              "type": "pdf",
+              "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+            },
+            {
+              "id": "attachment_2",
+              "type": "xlsx",
+              "url": "http://www.clickdimensions.com/links/TestXLSXfile.xlsx"
+            },
+            {
+              "id": "attachment_3",
+              "type": "docx",
+              "url": "http://www.clickdimensions.com/links/TestWordFile.docx"
+            }
+          ],
+          "notes": [
+            {
+              "id": "note_1",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_2",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_3",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_4",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_5",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            }
+          ]
         },
         {
           "id": "task_2",
@@ -106,7 +155,56 @@
           },
           "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
           "status": "COMPLETED",
-          "comments": []
+          "comments": [],
+          "attachment": [
+            {
+              "id": "attachment_1",
+              "type": "pdf",
+              "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+            },
+            {
+              "id": "attachment_2",
+              "type": "xlsx",
+              "url": "http://www.clickdimensions.com/links/TestXLSXfile.xlsx"
+            },
+            {
+              "id": "attachment_3",
+              "type": "docx",
+              "url": "http://www.clickdimensions.com/links/TestWordFile.docx"
+            }
+          ],
+          "notes": [
+            {
+              "id": "note_1",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_2",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_3",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_4",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_5",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            }
+          ]
         },
         {
           "id": "task_3",
@@ -121,7 +219,56 @@
           },
           "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
           "status": "IN_PROGRESS",
-          "comments": []
+          "comments": [],
+          "attachment": [
+            {
+              "id": "attachment_1",
+              "type": "pdf",
+              "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+            },
+            {
+              "id": "attachment_2",
+              "type": "xlsx",
+              "url": "http://www.clickdimensions.com/links/TestXLSXfile.xlsx"
+            },
+            {
+              "id": "attachment_3",
+              "type": "docx",
+              "url": "http://www.clickdimensions.com/links/TestWordFile.docx"
+            }
+          ],
+          "notes": [
+            {
+              "id": "note_1",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_2",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_3",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_4",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_5",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            }
+          ]
         },
         {
           "id": "task_4",
@@ -142,7 +289,56 @@
           },
           "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
           "status": "PAUSED",
-          "comments": []
+          "comments": [],
+          "attachment": [
+            {
+              "id": "attachment_1",
+              "type": "pdf",
+              "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+            },
+            {
+              "id": "attachment_2",
+              "type": "xlsx",
+              "url": "http://www.clickdimensions.com/links/TestXLSXfile.xlsx"
+            },
+            {
+              "id": "attachment_3",
+              "type": "docx",
+              "url": "http://www.clickdimensions.com/links/TestWordFile.docx"
+            }
+          ],
+          "notes": [
+            {
+              "id": "note_1",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_2",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_3",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_4",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_5",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            }
+          ]
         },
         {
           "id": "task_5",
@@ -163,7 +359,56 @@
           },
           "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
           "status": "WAITING",
-          "comments": []
+          "comments": [],
+          "attachment": [
+            {
+              "id": "attachment_1",
+              "type": "pdf",
+              "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+            },
+            {
+              "id": "attachment_2",
+              "type": "xlsx",
+              "url": "http://www.clickdimensions.com/links/TestXLSXfile.xlsx"
+            },
+            {
+              "id": "attachment_3",
+              "type": "docx",
+              "url": "http://www.clickdimensions.com/links/TestWordFile.docx"
+            }
+          ],
+          "notes": [
+            {
+              "id": "note_1",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_2",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_3",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_4",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_5",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            }
+          ]
         },
         {
           "id": "task_6",
@@ -184,7 +429,56 @@
           },
           "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
           "status": "PAUSED",
-          "comments": []
+          "comments": [],
+          "attachment": [
+            {
+              "id": "attachment_1",
+              "type": "pdf",
+              "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+            },
+            {
+              "id": "attachment_2",
+              "type": "xlsx",
+              "url": "http://www.clickdimensions.com/links/TestXLSXfile.xlsx"
+            },
+            {
+              "id": "attachment_3",
+              "type": "docx",
+              "url": "http://www.clickdimensions.com/links/TestWordFile.docx"
+            }
+          ],
+          "notes": [
+            {
+              "id": "note_1",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_2",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_3",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_4",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_5",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            }
+          ]
         },
         {
           "id": "task_7",
@@ -205,7 +499,56 @@
           },
           "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
           "status": "COMPLETED",
-          "comments": []
+          "comments": [],
+          "attachment": [
+            {
+              "id": "attachment_1",
+              "type": "pdf",
+              "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+            },
+            {
+              "id": "attachment_2",
+              "type": "xlsx",
+              "url": "http://www.clickdimensions.com/links/TestXLSXfile.xlsx"
+            },
+            {
+              "id": "attachment_3",
+              "type": "docx",
+              "url": "http://www.clickdimensions.com/links/TestWordFile.docx"
+            }
+          ],
+          "notes": [
+            {
+              "id": "note_1",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_2",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_3",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_4",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_5",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            }
+          ]
         }
       ],
       "employees": [
@@ -1195,7 +1538,56 @@
             "position": "Funny men"
           },
           "reporter": "",
-          "comments": []
+          "comments": [],
+          "attachment": [
+            {
+              "id": "attachment_1",
+              "type": "pdf",
+              "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+            },
+            {
+              "id": "attachment_2",
+              "type": "xlsx",
+              "url": "http://www.clickdimensions.com/links/TestXLSXfile.xlsx"
+            },
+            {
+              "id": "attachment_3",
+              "type": "docx",
+              "url": "http://www.clickdimensions.com/links/TestWordFile.docx"
+            }
+          ],
+          "notes": [
+            {
+              "id": "note_1",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_2",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_3",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_4",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_5",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            }
+          ]
         },
         {
           "id": "task_2",
@@ -1216,7 +1608,56 @@
           },
           "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
           "status": "COMPLETED",
-          "comments": []
+          "comments": [],
+          "attachment": [
+            {
+              "id": "attachment_1",
+              "type": "pdf",
+              "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+            },
+            {
+              "id": "attachment_2",
+              "type": "xlsx",
+              "url": "http://www.clickdimensions.com/links/TestXLSXfile.xlsx"
+            },
+            {
+              "id": "attachment_3",
+              "type": "docx",
+              "url": "http://www.clickdimensions.com/links/TestWordFile.docx"
+            }
+          ],
+          "notes": [
+            {
+              "id": "note_1",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_2",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_3",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_4",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_5",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            }
+          ]
         },
         {
           "id": "task_3",
@@ -1231,7 +1672,56 @@
           },
           "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
           "status": "IN_PROGRESS",
-          "comments": []
+          "comments": [],
+          "attachment": [
+            {
+              "id": "attachment_1",
+              "type": "pdf",
+              "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+            },
+            {
+              "id": "attachment_2",
+              "type": "xlsx",
+              "url": "http://www.clickdimensions.com/links/TestXLSXfile.xlsx"
+            },
+            {
+              "id": "attachment_3",
+              "type": "docx",
+              "url": "http://www.clickdimensions.com/links/TestWordFile.docx"
+            }
+          ],
+          "notes": [
+            {
+              "id": "note_1",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_2",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_3",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_4",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_5",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            }
+          ]
         },
         {
           "id": "task_4",
@@ -1252,7 +1742,56 @@
           },
           "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
           "status": "PAUSED",
-          "comments": []
+          "comments": [],
+          "attachment": [
+            {
+              "id": "attachment_1",
+              "type": "pdf",
+              "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+            },
+            {
+              "id": "attachment_2",
+              "type": "xlsx",
+              "url": "http://www.clickdimensions.com/links/TestXLSXfile.xlsx"
+            },
+            {
+              "id": "attachment_3",
+              "type": "docx",
+              "url": "http://www.clickdimensions.com/links/TestWordFile.docx"
+            }
+          ],
+          "notes": [
+            {
+              "id": "note_1",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_2",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_3",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_4",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_5",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            }
+          ]
         },
         {
           "id": "task_5",
@@ -1273,7 +1812,56 @@
           },
           "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
           "status": "WAITING",
-          "comments": []
+          "comments": [],
+          "attachment": [
+            {
+              "id": "attachment_1",
+              "type": "pdf",
+              "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+            },
+            {
+              "id": "attachment_2",
+              "type": "xlsx",
+              "url": "http://www.clickdimensions.com/links/TestXLSXfile.xlsx"
+            },
+            {
+              "id": "attachment_3",
+              "type": "docx",
+              "url": "http://www.clickdimensions.com/links/TestWordFile.docx"
+            }
+          ],
+          "notes": [
+            {
+              "id": "note_1",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_2",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_3",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_4",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_5",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            }
+          ]
         },
         {
           "id": "task_6",
@@ -1294,7 +1882,56 @@
           },
           "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
           "status": "PAUSED",
-          "comments": []
+          "comments": [],
+          "attachment": [
+            {
+              "id": "attachment_1",
+              "type": "pdf",
+              "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+            },
+            {
+              "id": "attachment_2",
+              "type": "xlsx",
+              "url": "http://www.clickdimensions.com/links/TestXLSXfile.xlsx"
+            },
+            {
+              "id": "attachment_3",
+              "type": "docx",
+              "url": "http://www.clickdimensions.com/links/TestWordFile.docx"
+            }
+          ],
+          "notes": [
+            {
+              "id": "note_1",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_2",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_3",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_4",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_5",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            }
+          ]
         },
         {
           "id": "task_7",
@@ -1315,7 +1952,56 @@
           },
           "created_at": "Wed Feb 09 2022 17:43:13 GMT+0100 (Central European Standard Time)",
           "status": "COMPLETED",
-          "comments": []
+          "comments": [],
+          "attachment": [
+            {
+              "id": "attachment_1",
+              "type": "pdf",
+              "url": "https://www.clickdimensions.com/links/TestPDFfile.pdf"
+            },
+            {
+              "id": "attachment_2",
+              "type": "xlsx",
+              "url": "http://www.clickdimensions.com/links/TestXLSXfile.xlsx"
+            },
+            {
+              "id": "attachment_3",
+              "type": "docx",
+              "url": "http://www.clickdimensions.com/links/TestWordFile.docx"
+            }
+          ],
+          "notes": [
+            {
+              "id": "note_1",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_2",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_3",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_4",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            },
+            {
+              "id": "note_5",
+              "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              "type": "note",
+              "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+            }
+          ]
         }
       ],
       "employees": [
@@ -2213,5 +2899,11 @@
         }
       ]
     }
+  ],
+  "theme": [
+    { "color": "#aaddaa", "type": "GREEN", "id": 1, "isActive": true },
+    { "color": "#0083e8", "type": "BLUE", "id": 2, "isActive": false },
+    { "color": "#a558fc", "type": "PURPLE", "id": 3, "isActive": false },
+    { "color": "#ff7375", "type": "RED", "id": 4, "isActive": false }
   ]
 }

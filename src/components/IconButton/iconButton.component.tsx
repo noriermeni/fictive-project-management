@@ -15,7 +15,7 @@ export default function IconButton({onClick, className = "", icon, iconSize, tit
 
     const styles = mergeStyleSets({
         icon: {
-            fontSize: iconSize ? iconSize : 30,
+            fontSize: iconSize ? iconSize : 25,
             cursor: "pointer"
         }
     });

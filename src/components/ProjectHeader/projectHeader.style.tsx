@@ -37,7 +37,7 @@ export const getProjectHeaderClassNames = ({palette, headerHeight, collapseHeade
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            paddingBlock: 10,
+            paddingBlock: 5,
         },
         projectInformation: {
             marginLeft: 10,
@@ -50,7 +50,7 @@ export const getProjectHeaderClassNames = ({palette, headerHeight, collapseHeade
             alignItems: "center",
         },
         iconSettings: {
-            fontSize: 30,
+            fontSize: 25,
             cursor: "pointer",
             color: palette.themeDarker
         },

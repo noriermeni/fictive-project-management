@@ -1,32 +1,29 @@
-import React, {useEffect} from "react";
-import {Icon, useTheme} from "@fluentui/react";
+import React from "react";
+import classNames from "classnames";
+import {useSelector} from "react-redux";
+import {useTheme} from "@fluentui/react";
 import {getTaskLineFieldClassNames} from "./taskLineField.style";
 import {formatDate} from "../../../utils/dateFormatter";
 import StatusCircle from "../StatusCircle/statusCircle.component";
 import Title from "../../Title/title.component";
-import CustomFacepile from "../../CustomFacepile/customFacepile.component";
-
-import {TaskType} from "../../../types/Task/task.type";
-import classNames from "classnames";
 import UsersList from "../../UsersList/usersList.component";
+import HoverCardWrapper from "../../HoverCardWrapper/hoverCardWrapper.component";
+import AttachmentsList from "../../AttachmentsList/attachmentsList.component";
+import NotesList from "../../NotesList/notesList.component";
 import {UserType} from "../../../types/User/user.type";
-import {useSelector} from "react-redux";
+import {TaskType} from "../../../types/Task/task.type";
 
 export default function TaskLineField(props: TaskType) {
+    const {palette} = useTheme();
     const {projectPathname} = useSelector(state => (state as any).project);
     const {
-        id,
         title,
-        description,
         estimation_date,
-        created_by,
-        created_at,
         status,
         assignee,
-        reporter,
-        comments
+        attachment,
+        notes
     } = props;
-    const {palette} = useTheme();
     const {
         container,
         containerColumn,
@@ -57,14 +54,20 @@ export default function TaskLineField(props: TaskType) {
                 }))} size={'sm'} text={title ? title : `Title not found!`}/>
             </div>
             <div className={row}>
-                <Icon className={classNames({
-                    [paddingInline]: true,
-                    [iconSettings]: true
-                })} iconName={'Library'}/>
-                <Icon className={classNames({
-                    [paddingInline]: true,
-                    [iconSettings]: true
-                })} iconName={'Boards'}/>
+                <HoverCardWrapper title={"Attachments"}
+                                  className={classNames({
+                                      [paddingInline]: true,
+                                      [iconSettings]: true
+                                  })} icon='Library'>
+                    <AttachmentsList attachments={attachment}/>
+                </HoverCardWrapper>
+                <HoverCardWrapper title={"Notes"}
+                                  className={classNames({
+                                      [paddingInline]: true,
+                                      [iconSettings]: true
+                                  })} icon={'Boards'}>
+                    <NotesList notes={notes}/>
+                </HoverCardWrapper>
                 {estimation_date && <Title className={paddingInline} size={"sm"} text={formatDate(estimation_date)}/>}
                 <div className={columnSize}>
                     {assignee && <UsersList showUnknownPersonaCoin={!assignee} showDetails

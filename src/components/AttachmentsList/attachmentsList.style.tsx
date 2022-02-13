@@ -1,11 +1,11 @@
 import {IPalette, mergeStyleSets} from "@fluentui/react";
 
-interface AttachmentsPanelClassNames {
+interface AttachmentsListClassNames {
     container: string;
     fileItem: string;
 }
 
-export const getAttachmentsPanelClassNames = (palette: IPalette): AttachmentsPanelClassNames => {
+export const getAttachmentsListClassNames = (palette: IPalette): AttachmentsListClassNames => {
     return mergeStyleSets({
         container: {
             display: "flex",
