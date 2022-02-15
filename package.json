@@ -38,7 +38,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --watch db.json --port 5000"
+    "server": "json-server --watch db.json --port 5000",
+    "dev": "react-scripts start && json-server --watch db.json --port 5000"
   },
   "eslintConfig": {
     "extends": [

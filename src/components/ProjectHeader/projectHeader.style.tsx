@@ -88,7 +88,7 @@ export const getProjectHeaderClassNames = ({palette, headerHeight, collapseHeade
             transform: "rotate(180deg)"
         },
         collapsedContainer: {
-            bottom: `calc(-${headerHeight}px + 10px)`
+            bottom: `calc(-${headerHeight}px + 7px)`
         }
     });
 };
