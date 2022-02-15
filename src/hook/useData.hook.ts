@@ -12,7 +12,7 @@ export default function useData(path: string) {
         (
             async function () {
                 try {
-                    const response = await axios.get(`${LOCAL_URL_API}${path}`);
+                    const response = await axios.get(`${URL_API}${path}`);
                     setData(response.data);
                 } catch (err: any) {
                     setError(err);
