@@ -36,7 +36,7 @@ export default function TaskLineField(props: TaskType) {
     } = getTaskLineFieldClassNames(palette);
 
     const checkIfEmployeeIsAssignee = () => {
-        let emptyUser: Array<UserType> = [{id: "X", first_name: "X", last_name: "X"}]
+        const emptyUser: Array<UserType> = [{id: "X", first_name: "X", last_name: "X"}]
         if (assignee) return [assignee];
         return emptyUser;
     }

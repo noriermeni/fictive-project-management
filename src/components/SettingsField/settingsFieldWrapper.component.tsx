@@ -13,7 +13,7 @@ interface Props {
 
 export default function SettingsFieldWrapper({children, title, className = "", boxListClassName = ""}: Props) {
     const {palette} = useTheme();
-    let {container, boxList} = getSettingsFieldWrapperClassNames(palette);
+    const {container, boxList} = getSettingsFieldWrapperClassNames(palette);
 
     return (
         <div className={classNames({

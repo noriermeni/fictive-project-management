@@ -1,6 +1,6 @@
 import React from "react";
 import {useTheme} from "@fluentui/react";
-import {defaultStyles, FileIcon} from "react-file-icon";
+    import {defaultStyles, FileIcon} from "react-file-icon";
 import {getAttachmentsListClassNames} from "./attachmentsList.style";
 import {getLastKeyFromPathname} from "../../utils/splitPathname";
 import {downloadFile} from "../../utils/downloadFile";

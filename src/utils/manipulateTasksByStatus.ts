@@ -3,7 +3,7 @@ import {TaskType} from "../types/Task/task.type";
 import {ListOfStatuses} from "../types/StatusDetailsType/listOfStatuses";
 
 export const manipulateTasksByStatus = (tasks: Array<TaskType>) => {
-    let currentStatusList: ListOfStatuses = {
+    const currentStatusList: ListOfStatuses = {
         in_progress: { name: "On Going", status: StatusEnum.IN_PROGRESS, tasks: [] },
         waiting: { name: "On hold", status: StatusEnum.WAITING, tasks: [] },
         paused: { name: "Paused", status: StatusEnum.PAUSED, tasks: [] },

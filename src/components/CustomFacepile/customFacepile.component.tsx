@@ -15,7 +15,7 @@ export default function CustomFacepile(props: Props) {
     const [employeesFacepileDetails, setEmployeesFacepileDetails] = useState<Array<{ personaName: string }>>([]);
 
     useEffect(() => {
-        let currentEmployeesFacepileDetails: Array<{ personaName: string }> = [...employeesFacepileDetails];
+        const currentEmployeesFacepileDetails: Array<{ personaName: string }> = [...employeesFacepileDetails];
         employees && _.forEach(employees, (employee: UserType) => currentEmployeesFacepileDetails.push({personaName: `${employee.first_name} ${employee.last_name}`}));
         setEmployeesFacepileDetails(currentEmployeesFacepileDetails);
     }, [])
