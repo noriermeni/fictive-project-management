@@ -1,13 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { setLocalData } from "../../services/localstorage/localstorage";
-import { ThemeEnum } from "../../enums/ThemeTypes/theme.enum";
+
+const defaultState = {
+    customColor: "#a6bf60",
+    theme: "GREEN",
+    language: "sq",
+}
 
 const settingsSlice = createSlice({
     name: 'settings',
-    initialState: {
-        theme: ThemeEnum.GREEN,
-        language: 'en',
-    },
+    initialState: defaultState,
     reducers: {
         setTheme(state, action) {
             state.theme = action.payload;
@@ -17,12 +19,16 @@ const settingsSlice = createSlice({
             state.language = action.payload;
             setLocalData('language', action.payload)
         },
+        setCustomColor(state, action) {
+            state.customColor = action.payload;
+        }
     },
 })
 
 export const {
     setTheme,
-    setLanguage
+    setLanguage,
+    setCustomColor
 } = settingsSlice.actions;
 
 export default settingsSlice.reducer;
