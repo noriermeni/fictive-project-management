@@ -7,7 +7,7 @@ import {
 } from '@fluentui/react/lib/index';
 
 const colorPickerStyles: Partial<IColorPickerStyles> = {
-    panel: {padding: 12},
+    panel: {paddingBlock: 12},
     root: {
         maxWidth: 250,
         minWidth: 250,
