@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Fictive Project Management
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Is a simple Project management idea with 2 templates to show list of Projects with their children (hierarchy of projects) and Project details.
+
+## Demo example below
+
+https://fictive-project-management.herokuapp.com/
 
 ## Available Scripts
 
