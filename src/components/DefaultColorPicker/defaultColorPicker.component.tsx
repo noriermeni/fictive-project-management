@@ -7,7 +7,7 @@ import {
 } from '@fluentui/react/lib/index';
 
 const colorPickerStyles: Partial<IColorPickerStyles> = {
-    panel: {padding: 12},
+    panel: {paddingBlock: 12, paddingInline: 0},
     root: {
         maxWidth: 250,
         minWidth: 250,
@@ -18,6 +18,7 @@ const colorPickerStyles: Partial<IColorPickerStyles> = {
 interface Props {
     showPreview?: boolean;
     defaultColor?: string;
+
     setGivenColor(color: IColor): void;
 }
 
@@ -33,10 +34,7 @@ export default function DefaultColorPicker({setGivenColor, showPreview = true, d
         <div>
             <ColorPicker
                 color={color}
-                onChange={(ev: any, colorObj: IColor) => {
-                    setGivenColor(colorObj);
-                    setColor(colorObj);
-                }}
+                onChange={updateColor}
                 alphaType={'none'}
                 showPreview={showPreview}
                 styles={colorPickerStyles}/>

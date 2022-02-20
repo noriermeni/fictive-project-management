@@ -5,6 +5,8 @@ interface HeaderClassNames {
     colorBox: string;
     colorBoxList: string;
     activeColor: string;
+    defaultColorPickerWrapper: string;
+    collapsedColorPickerWrapper: string;
 }
 
 export const getThemeSwitcherClassNames = (palette: IPalette): HeaderClassNames => {
@@ -23,6 +25,14 @@ export const getThemeSwitcherClassNames = (palette: IPalette): HeaderClassNames 
         },
         activeColor: {
             borderColor: `${palette.neutralSecondary} !important`,
+        },
+        defaultColorPickerWrapper: {
+            overflow: "hidden",
+            height: 0,
+            transition: "all 1s ease-in-out"
+        },
+        collapsedColorPickerWrapper: {
+            height: "370px !important",
         }
     });
 };
