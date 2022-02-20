@@ -33,7 +33,10 @@ export default function DefaultColorPicker({setGivenColor, showPreview = true, d
         <div>
             <ColorPicker
                 color={color}
-                onChange={updateColor}
+                onChange={(ev: any, colorObj: IColor) => {
+                    setGivenColor(colorObj);
+                    setColor(colorObj);
+                }}
                 alphaType={'none'}
                 showPreview={showPreview}
                 styles={colorPickerStyles}/>
