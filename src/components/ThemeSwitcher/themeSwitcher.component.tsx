@@ -16,14 +16,19 @@ export default function ThemeSwitcher() {
 
     const dispatch = useDispatch();
     const {palette} = useTheme();
-    const {activeColor, colorBox} = getThemeSwitcherClassNames(palette);
+    const {
+        activeColor,
+        colorBox,
+        defaultColorPickerWrapper,
+        collapsedColorPickerWrapper
+    } = getThemeSwitcherClassNames(palette);
     const {theme, customColor} = useSelector(state => (state as any).settings);
     const [enablePicker, setEnablePicker] = useState<boolean>(false);
     const {ref, isComponentVisible} = useComponentVisibleHook({extendBox: enablePicker});
     const colors: Array<ColorType> = useMemo(() => themes, []);
 
     useEffect(() => {
-        !isComponentVisible && setEnablePicker(false)
+        !isComponentVisible && setEnablePicker(false);
     }, [isComponentVisible])
 
     const _changeTheme = (color: ColorType) => {
@@ -46,17 +51,20 @@ export default function ThemeSwitcher() {
     />)
 
     const switchCustomColor = (color: string) => {
-        dispatch(setCustomColor(color))
+        dispatch(setCustomColor(color));
     }
 
     return (
         <SettingsFieldWrapper title={`Choose theme`}>
             {colorBoxes()}
-            {isComponentVisible && <div ref={ref}>
+            <div className={classNames({
+                [defaultColorPickerWrapper]: true,
+                [collapsedColorPickerWrapper]: isComponentVisible
+            })} ref={ref}>
                 <DefaultColorPicker
                     defaultColor={customColor}
                     setGivenColor={(color) => switchCustomColor(color.str)}/>
-            </div>}
+            </div>
         </SettingsFieldWrapper>
     )
 }
