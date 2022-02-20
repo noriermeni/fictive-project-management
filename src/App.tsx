@@ -10,7 +10,7 @@ import {findTheme} from "./utils/theme/theme";
 import generateTheme from "./utils/theme/generator";
 import {ThemeEnum} from "./enums/ThemeTypes/theme.enum";
 import {clearSelectedUsers} from "./store/slice/project.slice";
-import {setLanguage, setTheme} from "./store/slice/settings.slice";
+import {setCustomColor, setLanguage, setTheme} from "./store/slice/settings.slice";
 import {getLocalData} from "./services/localstorage/localstorage";
 import Header from "./components/layout/Header/header.component";
 import UsersPanel from "./components/Dialogs/UsersPanel/usersPanel.component";
@@ -25,6 +25,7 @@ function Main() {
     useEffect(() => {
         getLocalData('theme').then(res => res && dispatch(setTheme(res)));
         getLocalData('language').then(res => res && dispatch(setLanguage(res)));
+        getLocalData('color').then(res => res && dispatch(setCustomColor(res)));
     }, [])
 
     useEffect(() => {
@@ -33,7 +34,7 @@ function Main() {
     }, [language, theme])
 
     const switchTheme = () => {
-        if(theme === ThemeEnum.CUSTOM) {
+        if (theme === ThemeEnum.CUSTOM) {
             return createTheme({
                 palette: {...generateTheme(customColor, '#323130', '#ffffff').palette}
             });

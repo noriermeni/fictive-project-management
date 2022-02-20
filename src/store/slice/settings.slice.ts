@@ -13,7 +13,7 @@ const settingsSlice = createSlice({
     reducers: {
         setTheme(state, action) {
             state.theme = action.payload;
-            setLocalData('theme', action.payload)
+            setLocalData('theme', action.payload);
         },
         setLanguage(state, action) {
             state.language = action.payload;
@@ -21,6 +21,7 @@ const settingsSlice = createSlice({
         },
         setCustomColor(state, action) {
             state.customColor = action.payload;
+            setLocalData('color', action.payload);
         }
     },
 })
