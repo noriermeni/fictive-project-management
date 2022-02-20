@@ -8,7 +8,7 @@ interface Props {
 export default function useComponentVisibleHook({extendBox, employeesPanel}: Props) {
 
     const ref = useRef<HTMLDivElement>(null);
-    const [isComponentVisible, setIsComponentVisible] = useState(extendBox);
+    const [isComponentVisible, setIsComponentVisible] = useState<boolean>(extendBox);
 
     useEffect(() => {
         if (employeesPanel === false || employeesPanel === undefined) setIsComponentVisible(extendBox);
