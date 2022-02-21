@@ -52,7 +52,7 @@ const generateTheme = (
     } = ThemeGenerator.getThemeAsJson(themeRules);
 
     const finalTheme = createTheme({
-        ...{ palette: themeAsJson },
+        ...{palette: themeAsJson},
         isInverted: currentIsDark,
     });
 

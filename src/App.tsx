@@ -6,9 +6,7 @@ import {BrowserRouter, Outlet} from "react-router-dom";
 import store from "./store";
 import Routes from "./routes";
 import './utils/language/i18n';
-import {findTheme} from "./utils/theme/theme";
 import generateTheme from "./utils/theme/generator";
-import {ThemeEnum} from "./enums/ThemeTypes/theme.enum";
 import {clearSelectedUsers} from "./store/slice/project.slice";
 import {setCustomColor, setLanguage, setTheme} from "./store/slice/settings.slice";
 import {getLocalData} from "./services/localstorage/localstorage";
@@ -18,7 +16,6 @@ import UsersPanel from "./components/Dialogs/UsersPanel/usersPanel.component";
 function Main() {
     const {i18n} = useTranslation();
     const dispatch = useDispatch();
-    const [updateTheme, setUpdateTheme] = useState<ThemeEnum>(ThemeEnum.GREEN);
     const {theme, language, customColor} = useSelector(state => (state as any).settings);
     const {employeesPanel} = useSelector(state => (state as any).project);
 
@@ -30,16 +27,12 @@ function Main() {
 
     useEffect(() => {
         i18n.changeLanguage(language);
-        setUpdateTheme(theme);
     }, [language, theme])
 
     const switchTheme = () => {
-        if (theme === ThemeEnum.CUSTOM) {
-            return createTheme({
-                palette: {...generateTheme(customColor, '#323130', '#ffffff').palette}
-            });
-        }
-        return findTheme(updateTheme)
+        return createTheme({
+            palette: {...generateTheme(customColor, '#323130', '#ffffff').palette}
+        });
     }
 
     return (

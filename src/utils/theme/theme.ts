@@ -1,25 +1,5 @@
 import {ThemeEnum} from "../../enums/ThemeTypes/theme.enum";
-
-import {GreenTheme} from "./types/greenTheme";
-import {BlueTheme} from "./types/blueTheme";
-import {PurpleTheme} from "./types/purpleTheme";
-import {RedTheme} from "./types/redTheme";
 import {ColorType} from "../../types/Colors/color.type";
-
-export const findTheme = (theme: ThemeEnum) => {
-    switch (theme) {
-        case ThemeEnum.BLUE:
-            return BlueTheme;
-        case ThemeEnum.GREEN:
-            return GreenTheme;
-        case ThemeEnum.PURPLE:
-            return PurpleTheme;
-        case ThemeEnum.RED:
-            return RedTheme;
-        default:
-            return GreenTheme;
-    }
-}
 
 export const themes: Array<ColorType> = [
     {color: "#aaddaa", type: ThemeEnum.GREEN, id: 1, isActive: true},

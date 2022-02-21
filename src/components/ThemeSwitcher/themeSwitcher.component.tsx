@@ -5,7 +5,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {useTheme} from "@fluentui/react";
 import {themes} from "../../utils/theme/theme";
 import {getThemeSwitcherClassNames} from "./themeSwitcher.style";
-import {setCustomColor, setTheme} from "../../store/slice/settings.slice";
+import {setCustomColor} from "../../store/slice/settings.slice";
 import useComponentVisibleHook from "../../hook/useComponentVisible.hook";
 import SettingsFieldWrapper from "../SettingsField/settingsFieldWrapper.component";
 import DefaultColorPicker from "../DefaultColorPicker/defaultColorPicker.component";
@@ -32,9 +32,11 @@ export default function ThemeSwitcher() {
     }, [isComponentVisible])
 
     const _changeTheme = (color: ColorType) => {
-        color.type === ThemeEnum.CUSTOM && dispatch(setCustomColor(customColor));
+        dispatch(setCustomColor({
+            color: color.type === ThemeEnum.CUSTOM ? customColor : color.color,
+            type: color.type
+        }));
         setEnablePicker(color.type === ThemeEnum.CUSTOM);
-        dispatch(setTheme(color.type));
     }
 
     const colorBoxes = () => _.map(colors, (color: ColorType, idx: number) => <div
@@ -51,7 +53,7 @@ export default function ThemeSwitcher() {
     />)
 
     const switchCustomColor = (color: string) => {
-        dispatch(setCustomColor(color));
+        dispatch(setCustomColor({color, type: ThemeEnum.CUSTOM}));
     }
 
     return (
